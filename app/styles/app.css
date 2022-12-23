@@ -545,10 +545,6 @@ video {
   text-transform: uppercase;
 }
 
-.first-line\:uppercase::first-line {
-  text-transform: uppercase;
-}
-
 .after\:block::after {
   content: var(--tw-content);
   display: block;
@@ -587,7 +583,9 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hover\:after\:w-full:hover::after {
-  content: var(--tw-content);
-  width: 100%;
+@media (hover: hover) and (pointer: fine) {
+  .hover\:after\:w-full:hover::after {
+    content: var(--tw-content);
+    width: 100%;
+  }
 }
