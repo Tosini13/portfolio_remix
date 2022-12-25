@@ -10,7 +10,14 @@ import {
 import styles from "./styles/app.css";
 
 export function links() {
-  return [{ rel: "stylesheet", href: styles }];
+  return [
+    { rel: "stylesheet", href: styles },
+    {
+      rel: "stylesheet",
+      href: "https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900",
+      type: "text/css",
+    },
+  ];
 }
 
 export const meta: MetaFunction = () => ({
@@ -26,7 +33,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="font-poppins">
         <Outlet />
         <ScrollRestoration />
         <Scripts />
