@@ -13,12 +13,10 @@ module.exports = {
     extend: {
       colors: {
         "primary": "#24242E",
+        "primary-light": "#343453",
         "secondary": "#FFF",
         "tertiary": "#9B9DB1",
         "extra": "#2D95F5",
-      },
-      boxShadow: {
-        'button': '0px 4px 0px #9B9DB1',
       },
       fontFamily: {
         poppins: ['"Poppins"', ...defaultTheme.fontFamily.sans]
