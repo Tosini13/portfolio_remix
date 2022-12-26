@@ -8,7 +8,7 @@ type StoryModuleProps = {};
 
 const StoryModule: React.FC<StoryModuleProps> = ({}) => {
   return (
-    <div
+    <section
       data-test-id="story_module"
       id="story"
       className="max-w-[1100px] mx-auto flex space-x-8 items-center justify-between"
@@ -44,7 +44,7 @@ const StoryModule: React.FC<StoryModuleProps> = ({}) => {
       >
         <img className="grayscale" src={profilePhoto} alt="photo about me" />
       </div>
-    </div>
+    </section>
   );
 };
 

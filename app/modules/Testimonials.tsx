@@ -6,8 +6,9 @@ type TestimonialsProps = {};
 
 const Testimonials: React.FC<TestimonialsProps> = () => {
   return (
-    <div
+    <section
       data-test-id="testimonials"
+      id="testimonials"
       className="max-w-[1000px] mx-auto space-y-6"
     >
       <Heading className="mx-auto flex items-center after:w-full">
@@ -39,7 +40,7 @@ const Testimonials: React.FC<TestimonialsProps> = () => {
         Radosław Warish <br />{" "}
         <span className="text-tertiary">from Brainly</span>
       </Paragraph>
-    </div>
+    </section>
   );
 };
 

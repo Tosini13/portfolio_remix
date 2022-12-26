@@ -16,7 +16,7 @@ type HomeModuleProps = {};
 
 const HomeModule: React.FC<HomeModuleProps> = () => {
   return (
-    <div
+    <section
       data-test-id="home_module"
       id="home"
       className="max-w-[1100px] mx-auto"
@@ -80,7 +80,7 @@ const HomeModule: React.FC<HomeModuleProps> = () => {
         <img className={imgClassName} src={apptimiaLogo} alt="Apptimia logo" />
         <img className={imgClassName} src={brainlyLogo} alt="Brainly logo" />
       </div>
-    </div>
+    </section>
   );
 };
 
