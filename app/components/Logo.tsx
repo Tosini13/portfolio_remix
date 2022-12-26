@@ -1,4 +1,4 @@
-import logo from "../../public/img/logo/logo.svg";
+import logo from "../../public/img/logos/logo.svg";
 
 type LogoProps = {};
 

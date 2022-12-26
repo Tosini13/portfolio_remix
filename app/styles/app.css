@@ -513,6 +513,22 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
 .ml-1 {
   margin-left: 0.25rem;
 }
@@ -525,26 +541,52 @@ video {
   margin-left: auto;
 }
 
-.block {
-  display: block;
+.inline {
+  display: inline;
 }
 
 .flex {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
+.h-full {
+  height: 100%;
+}
+
 .w-full {
   width: 100%;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .items-center {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
 .space-x-8 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(2rem * var(--tw-space-x-reverse));
   margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
 .whitespace-nowrap {
@@ -574,21 +616,35 @@ video {
   font-family: "Poppins", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.font-semibold {
-  font-weight: 600;
-}
-
-.font-thin {
-  font-weight: 100;
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .font-light {
   font-weight: 300;
 }
 
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.leading-8 {
+  line-height: 2rem;
+}
+
 .text-secondary {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-extra {
+  --tw-text-opacity: 1;
+  color: rgb(45 149 245 / var(--tw-text-opacity));
 }
 
 .shadow-button {
@@ -597,12 +653,25 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+.shadow-\[inset_0px_0px_50px_25px_white\2c inset_0px_-80px_100px_31px_white\2c inset_0px_-80px_150px_100px_rgb\(255_255_255_\/_40\%\)\] {
+  --tw-shadow: inset 0px 0px 50px 25px white,inset 0px -80px 100px 31px white,inset 0px -80px 150px 100px rgb(255 255 255 / 40%);
+  --tw-shadow-colored: inset 0px 0px 50px 25px var(--tw-shadow-color), inset 0px -80px 100px 31px var(--tw-shadow-color), inset 0px -80px 150px 100px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.grayscale {
+  --tw-grayscale: grayscale(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.transition-all {
+  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
 }
 
 .first-letter\:uppercase::first-letter {
@@ -648,6 +717,11 @@ video {
 }
 
 @media (hover: hover) and (pointer: fine) {
+  .hover\:grayscale-0:hover {
+    --tw-grayscale: grayscale(0);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  }
+
   .hover\:after\:w-full:hover::after {
     content: var(--tw-content);
     width: 100%;
