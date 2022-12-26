@@ -10,7 +10,7 @@ const MyStoryModule: React.FC<MyStoryModuleProps> = ({}) => {
   return (
     <div
       data-test-id="my_story_module"
-      className="max-w-[1000px] mx-auto flex space-x-8 items-center justify-between"
+      className="max-w-[1100px] mx-auto flex space-x-8 items-center justify-between"
     >
       <div className="space-y-6 max-w-[600px]">
         <Heading className="flex items-center">

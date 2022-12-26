@@ -1,10 +1,18 @@
+import React from "react";
+import { twMerge } from "tailwind-merge";
+
+const themeClassName = "leading-8 font-light";
+
 const Paragraph: React.FC<React.HTMLAttributes<HTMLParagraphElement>> = ({
-  className,
+  className: customClassName,
   ...props
 }) => {
-  return (
-    <p data-test-id="paragraph" {...props} className="leading-8 font-light" />
+  const className = React.useMemo(
+    () => twMerge(themeClassName, customClassName),
+    [customClassName]
   );
+
+  return <p data-test-id="paragraph" {...props} className={className} />;
 };
 
 export default Paragraph;
