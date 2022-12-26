@@ -2,7 +2,7 @@ import React from "react";
 import { twMerge } from "tailwind-merge";
 
 const themeClassName =
-  "relative w-fit text-5xl font-medium after:absolute after:-bottom-4 after:left-0 after:w-2/3 after:border-b-4 after:border-extra";
+  "relative w-fit text-5xl font-medium pb-3 after:absolute after:bottom-0 after:left-0 after:w-2/3 after:border-b-4 after:border-extra";
 
 const Heading: React.FC<React.HTMLAttributes<HTMLHeadingElement>> = ({
   className: customClassName,

@@ -8,6 +8,7 @@ import doreaLogo from "../../public/img/logos/dorea_logo.png";
 import mayerynLogo from "../../public/img/logos/mayeryn_logo.png";
 import apptimiaLogo from "../../public/img/logos/apptimia_logo.png";
 import brainlyLogo from "../../public/img/logos/brainly_logo.png";
+import Paragraph from "~/components/Paragraph";
 
 const imgClassName = "grayscale hover:grayscale-0 transition-all duration-300";
 
@@ -15,7 +16,7 @@ type HomeModuleProps = {};
 
 const HomeModule: React.FC<HomeModuleProps> = () => {
   return (
-    <div data-test-id="home_module" className="px-10">
+    <div data-test-id="home_module" className="max-w-[1100px] mx-auto">
       <div className="grid grid-cols-2">
         <div className="space-y-6 lg:mt-20">
           <h1 className="text-5xl font-medium">
@@ -30,7 +31,7 @@ const HomeModule: React.FC<HomeModuleProps> = () => {
             <br /> My name is <span className="text-extra">Kuba</span> and I’m{" "}
             <span className="text-extra">software developer</span>.
           </h1>
-          <p className="leading-8 font-light">
+          <Paragraph>
             Do You need awwwwwwsome{" "}
             <span className="font-semibold">website</span>
             ?
@@ -39,7 +40,7 @@ const HomeModule: React.FC<HomeModuleProps> = () => {
             <span className="font-semibold">developer</span>
             <br />
             and hyperfriendly <span className="font-semibold">co-worker</span>?
-          </p>
+          </Paragraph>
           <Button className="bg-extra hover:bg-extra-light">
             Check my skills & experience
           </Button>
