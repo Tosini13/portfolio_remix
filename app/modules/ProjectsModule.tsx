@@ -6,6 +6,44 @@ const PROJECTS_IMG_PATH = "/img/projects";
 
 const projects: Array<ProjectType> = [
   {
+    id: "1",
+    title: "Tournaments PWA",
+    description:
+      "Progressive Web Application to facilitate tournaments creation. The website was meant for coaches preparing many sophisticated tournaments for young football players and for supporters (their parents) to be able to follow games online.",
+    technologies: [
+      {
+        id: "1",
+        name: "HTML 5",
+      },
+      {
+        id: "2",
+        name: "SASS",
+      },
+      {
+        id: "2.1",
+        name: "styled-components",
+      },
+      {
+        id: "2.2",
+        name: "Material UI",
+      },
+      {
+        id: "3",
+        name: "TypeScript",
+      },
+      {
+        id: "4",
+        name: "React",
+      },
+      {
+        id: "4",
+        name: "Firebase",
+      },
+    ],
+    desktopSrc: `${PROJECTS_IMG_PATH}/champions_youth.desktop.png`,
+    mobileSrc: `${PROJECTS_IMG_PATH}/champions_youth.mobile.png`,
+  },
+  {
     id: "2",
     title: "Nutrition responsive website",
     description:
@@ -17,7 +55,7 @@ const projects: Array<ProjectType> = [
       },
       {
         id: "2",
-        name: "CSS 3",
+        name: "Tailwind.css",
       },
       {
         id: "3",
@@ -47,8 +85,9 @@ const ProjectsModule: React.FC<ProjectsModuleProps> = () => {
         <img width={40} height={40} src={writing} alt="writing hand" />{" "}
       </Heading>
       <div className="grid grid-cols-2 gap-x-10 gap-y-14">
-        {Array(5)
-          .fill(projects[0])
+        {Array(2)
+          .fill(projects)
+          .flat()
           .map((project) => (
             <Project key={project.id} {...project} />
           ))}

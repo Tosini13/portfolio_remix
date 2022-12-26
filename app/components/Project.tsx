@@ -50,14 +50,14 @@ const Project: React.FC<ProjectProps> = ({
             src={mobileSrc}
             alt={`${title} mobile view`}
           />
-          <div className="absolute top-0 left-0 w-full h-full shadow-[inset_0px_-10px_15px_0px_white]" />
+          <div className="absolute top-0 left-0 w-full h-full shadow-[inset_0px_-10px_15px_0px_white,inset_0px_-10px_20px_8px_white]" />
         </div>
         <h3 className="text-3xl font-medium">{title}</h3>
-        <div className="flex items-center space-x-1 space-y-1">
+        <div className="flex flex-wrap items-center">
           {technologies.map((technology) => (
             <div
               key={technology.id}
-              className="rounded-full bg-tertiary text-secondary py-1.5 px-3 font-medium"
+              className="ml-1 mt-1 rounded-full bg-tertiary text-secondary py-1.5 px-3 font-medium whitespace-nowrap"
             >
               {technology.name}
             </div>
