@@ -38,7 +38,7 @@ type HeaderModuleProps = {};
 
 const HeaderModule: React.FC<HeaderModuleProps> = () => {
   return (
-    <div data-test-id="header_module" className="flex w-full items-center">
+    <div data-test-id="header_module" className="flex w-full items-center py-5">
       <Logo />
       <div className="ml-10 flex space-x-8 items-center">
         {links.map((link) => (

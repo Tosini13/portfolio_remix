@@ -1,6 +1,7 @@
 import Button from "~/components/Button";
 import wave from "../../public/img/icons/wave.svg";
 import profilePhoto from "../../public/img/photos/jb_photo.png";
+import logo from "../../public/img/logos/logo.svg";
 import zutLogo from "../../public/img/logos/zut_logo.png";
 import paCollegeLogo from "../../public/img/logos/paCollege_logo.png";
 import doreaLogo from "../../public/img/logos/dorea_logo.png";
@@ -14,9 +15,9 @@ type HomeModuleProps = {};
 
 const HomeModule: React.FC<HomeModuleProps> = () => {
   return (
-    <div data-test-id="home_module">
+    <div data-test-id="home_module" className="px-10">
       <div className="grid grid-cols-2">
-        <div className="space-y-6">
+        <div className="space-y-6 lg:mt-20">
           <h1 className="text-5xl font-medium">
             Hi.{" "}
             <img
@@ -39,9 +40,17 @@ const HomeModule: React.FC<HomeModuleProps> = () => {
             <br />
             and hyperfriendly <span className="font-semibold">co-worker</span>?
           </p>
-          <Button>Check my skills & experience</Button>
+          <Button className="bg-extra hover:bg-extra-light">
+            Check my skills & experience
+          </Button>
         </div>
-        <div className="relative">
+        <div className="relative pr-8 h-fit">
+          <img
+            className="absolute opacity-30 -pr-8"
+            width={"100%"}
+            src={logo}
+            alt="logo"
+          />
           <img
             className="grayscale"
             width={"100%"}

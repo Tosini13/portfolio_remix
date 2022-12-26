@@ -17,6 +17,7 @@ module.exports = {
         "secondary": "#FFF",
         "tertiary": "#9B9DB1",
         "extra": "#2D95F5",
+        "extra-light": "#44A5FF",
       },
       fontFamily: {
         poppins: ['"Poppins"', ...defaultTheme.fontFamily.sans]
