@@ -16,7 +16,11 @@ type HomeModuleProps = {};
 
 const HomeModule: React.FC<HomeModuleProps> = () => {
   return (
-    <div data-test-id="home_module" className="max-w-[1100px] mx-auto">
+    <div
+      data-test-id="home_module"
+      id="home"
+      className="max-w-[1100px] mx-auto"
+    >
       <div className="grid grid-cols-2">
         <div className="space-y-6 lg:mt-20">
           <h1 className="text-5xl font-medium">

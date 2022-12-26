@@ -19,7 +19,7 @@ const links: Array<TLinkType> = [
   },
   {
     title: "My story",
-    href: "#myStory",
+    href: "#story",
   },
   {
     title: "Testimonials",
@@ -27,7 +27,7 @@ const links: Array<TLinkType> = [
   },
   {
     title: "My projects",
-    href: "#myProjects",
+    href: "#projects",
   },
   {
     title: "Skills & Experience",

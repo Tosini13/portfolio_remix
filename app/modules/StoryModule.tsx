@@ -10,6 +10,7 @@ const StoryModule: React.FC<StoryModuleProps> = ({}) => {
   return (
     <div
       data-test-id="story_module"
+      id="story"
       className="max-w-[1100px] mx-auto flex space-x-8 items-center justify-between"
     >
       <div className="space-y-6 max-w-[600px]">
