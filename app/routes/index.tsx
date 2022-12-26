@@ -6,7 +6,7 @@ export default function Index() {
   return (
     <div>
       <HeaderModule />
-      <main className="space-y-20">
+      <main className="space-y-20 max-w-[1200px] mx-auto">
         <HomeModule />
         <MyStoryModule />
       </main>

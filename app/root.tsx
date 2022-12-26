@@ -33,7 +33,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="font-poppins max-w-[1200px] mx-auto">
+      <body className="font-poppins">
         <Outlet />
         <ScrollRestoration />
         <Scripts />
