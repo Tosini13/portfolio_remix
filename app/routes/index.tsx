@@ -1,5 +1,6 @@
 import HeaderModule from "~/modules/HeaderModule";
 import HomeModule from "~/modules/HomeModule";
+import ProjectsModule from "~/modules/ProjectsModule";
 import StoryModule from "~/modules/StoryModule";
 import Testimonials from "~/modules/Testimonials";
 
@@ -11,6 +12,7 @@ export default function Index() {
         <HomeModule />
         <StoryModule />
         <Testimonials />
+        <ProjectsModule />
       </main>
     </div>
   );
