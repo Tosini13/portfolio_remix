@@ -28,8 +28,11 @@ const HomeModule: React.FC<HomeModuleProps> = () => {
               src={wave}
               alt="waving hand"
             />
-            <br /> My name is <span className="text-extra">Kuba</span> and I’m{" "}
-            <span className="text-extra">software developer</span>.
+            <br /> My name is{" "}
+            <span title="Kuba is a short name of Jakub" className="text-extra">
+              Kuba
+            </span>{" "}
+            and I’m <span className="text-extra">software developer</span>.
           </h1>
           <Paragraph>
             Do You need awwwwwwsome{" "}
