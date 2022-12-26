@@ -4,12 +4,12 @@ import profilePhoto from "../../public/img/photos/jb_sea_photo.png";
 import depuytren from "../../public/img/icons/depuytren.svg";
 import Paragraph from "~/components/Paragraph";
 
-type MyStoryModuleProps = {};
+type StoryModuleProps = {};
 
-const MyStoryModule: React.FC<MyStoryModuleProps> = ({}) => {
+const StoryModule: React.FC<StoryModuleProps> = ({}) => {
   return (
     <div
-      data-test-id="my_story_module"
+      data-test-id="story_module"
       className="max-w-[1100px] mx-auto flex space-x-8 items-center justify-between"
     >
       <div className="space-y-6 max-w-[600px]">
@@ -47,4 +47,4 @@ const MyStoryModule: React.FC<MyStoryModuleProps> = ({}) => {
   );
 };
 
-export default MyStoryModule;
+export default StoryModule;
