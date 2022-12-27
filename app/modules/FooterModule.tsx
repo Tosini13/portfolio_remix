@@ -3,36 +3,8 @@ import Link from "~/components/Link";
 import Logo from "~/components/Logo";
 import Paragraph from "~/components/Paragraph";
 import { links } from "./HeaderModule";
-
-const ICONS_IMG_PATH = "/img/icons";
-
-const MEDIA_LINKS = [
-  {
-    id: "1",
-    iconSrc: `${ICONS_IMG_PATH}/github.svg`,
-    href: "#",
-  },
-  {
-    id: "2",
-    iconSrc: `${ICONS_IMG_PATH}/linkedIn.svg`,
-    href: "#",
-  },
-  {
-    id: "3",
-    iconSrc: `${ICONS_IMG_PATH}/facebook.svg`,
-    href: "#",
-  },
-  {
-    id: "4",
-    iconSrc: `${ICONS_IMG_PATH}/mail.secondary.icon.svg`,
-    href: "#",
-  },
-  {
-    id: "5",
-    iconSrc: `${ICONS_IMG_PATH}/telephone.secondary.icon.svg`,
-    href: "#",
-  },
-];
+import { MEDIA_LINKS } from "~/utils/media";
+import { ButtonLink } from "~/components/Button";
 
 type FooterModuleProps = {};
 
@@ -64,16 +36,16 @@ const FooterModule: React.FC<FooterModuleProps> = () => {
               ))}
             </div>
           </div>
-          <div className="flex items-center space-x-6">
+          <div className="flex items-center space-x-1">
             {MEDIA_LINKS.map((link) => (
-              <a key={link.id} href={link.href}>
+              <ButtonLink className="px-3" key={link.id} href={link.href}>
                 <img
                   height={20}
                   width={20}
                   src={link.iconSrc}
                   alt={"media icon"}
                 />
-              </a>
+              </ButtonLink>
             ))}
           </div>
         </div>

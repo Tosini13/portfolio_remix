@@ -1,4 +1,4 @@
-import Button from "~/components/Button";
+import Button, { ButtonLink } from "~/components/Button";
 import wave from "../../public/img/icons/wave.svg";
 import profilePhoto from "../../public/img/photos/jb_photo.png";
 import logo from "../../public/img/logos/logo.svg";
@@ -9,6 +9,7 @@ import mayerynLogo from "../../public/img/logos/mayeryn_logo.png";
 import apptimiaLogo from "../../public/img/logos/apptimia_logo.png";
 import brainlyLogo from "../../public/img/logos/brainly_logo.png";
 import Paragraph from "~/components/Paragraph";
+import { MEDIA_LINKS } from "~/utils/media";
 
 const imgClassName = "grayscale hover:grayscale-0 transition-all duration-300";
 
@@ -19,7 +20,7 @@ const HomeModule: React.FC<HomeModuleProps> = () => {
     <section
       data-test-id="home_module"
       id="home"
-      className="max-w-[1100px] mx-auto"
+      className="max-w-[1100px] mx-auto space-y-10"
     >
       <div className="grid grid-cols-2">
         <div className="space-y-6 lg:mt-20">
@@ -51,6 +52,20 @@ const HomeModule: React.FC<HomeModuleProps> = () => {
           <Button className="bg-extra hover:bg-extra-light">
             Check my skills & experience
           </Button>
+          <div className="flex items-center space-x-2">
+            {MEDIA_LINKS.filter((link) =>
+              ["github", "linkedIn", "insta", "fb"].includes(link.id)
+            ).map((link) => (
+              <ButtonLink className="px-3" key={link.id} href={link.href}>
+                <img
+                  height={20}
+                  width={20}
+                  src={link.iconSrc}
+                  alt={"media icon"}
+                />
+              </ButtonLink>
+            ))}
+          </div>
         </div>
         <div className="relative pr-8 h-fit">
           <img

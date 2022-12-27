@@ -27,3 +27,23 @@ const Button: React.FC<ButtonProps> = ({
 };
 
 export default Button;
+
+type ButtonLinkProps = React.LinkHTMLAttributes<HTMLAnchorElement> & {
+  secondary?: boolean;
+};
+export const ButtonLink: React.FC<ButtonLinkProps> = ({
+  className: customClassName,
+  secondary,
+  ...props
+}) => {
+  const className = React.useMemo(
+    () =>
+      twMerge(
+        themeClassName,
+        secondary ? secondaryThemeClassName : "",
+        customClassName
+      ),
+    [customClassName]
+  );
+  return <a data-test-id="button" className={className} {...props} />;
+};
