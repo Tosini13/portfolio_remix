@@ -1,7 +1,7 @@
 import logo from "../../public/img/logos/logo.svg";
 import Paragraph from "./Paragraph";
 
-type TechnologyType = {
+export type TechnologyType = {
   id: string;
   name: string;
 };

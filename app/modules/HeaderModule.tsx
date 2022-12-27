@@ -30,8 +30,8 @@ const links: Array<TLinkType> = [
     href: "#projects",
   },
   {
-    title: "Skills & Experience",
-    href: "#skillsAndExperience",
+    title: "Experience",
+    href: "#experience",
   },
   {
     title: "Contact",
