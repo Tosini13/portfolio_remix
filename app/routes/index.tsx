@@ -1,3 +1,4 @@
+import ContactModule from "~/modules/ContactModule";
 import ExperienceModule from "~/modules/ExperienceModule";
 import HeaderModule from "~/modules/HeaderModule";
 import HomeModule from "~/modules/HomeModule";
@@ -15,6 +16,7 @@ export default function Index() {
         <Testimonials />
         <ProjectsModule />
         <ExperienceModule />
+        <ContactModule />
       </main>
     </div>
   );
