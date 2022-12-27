@@ -1,12 +1,32 @@
-import logo from "../../public/img/logos/logo.svg";
+import React from "react";
+import { twMerge } from "tailwind-merge";
+import LOGO_ICON from "../../public/img/logos/logo.svg";
+import SECONDARY_LOGO from "../../public/img/logos/secondary.logo.svg";
 
-type LogoProps = {};
+const classNames = {
+  title: {
+    theme: "ml-1 font-semibold text-primary",
+    secondary: "text-secondary",
+  },
+};
 
-const Logo: React.FC<LogoProps> = ({}) => {
+type LogoProps = {
+  secondary?: boolean;
+};
+
+const Logo: React.FC<LogoProps> = ({ secondary }) => {
+  const className = React.useMemo(
+    () =>
+      twMerge(
+        classNames.title.theme,
+        secondary ? classNames.title.secondary : ""
+      ),
+    [secondary]
+  );
   return (
     <div data-test-id="logo" className="flex items-center">
-      <img src={logo} alt="logo" />
-      <h1 className="ml-1 font-semibold">Jakub Bartosik</h1>
+      <img src={secondary ? SECONDARY_LOGO : LOGO_ICON} alt="logo" />
+      <h1 className={className}>Jakub Bartosik</h1>
     </div>
   );
 };

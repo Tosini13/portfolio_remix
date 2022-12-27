@@ -12,7 +12,7 @@ type TLinkType = {
   href: string;
 };
 
-const links: Array<TLinkType> = [
+export const links: Array<TLinkType> = [
   {
     title: "home",
     href: "#home",
