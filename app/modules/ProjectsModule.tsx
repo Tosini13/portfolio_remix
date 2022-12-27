@@ -1,6 +1,7 @@
 import writing from "../../public/img/icons/writing.svg";
 import Heading from "~/components/Heading";
 import Project, { ProjectType } from "~/components/Project";
+import ProjectsEncourage from "~/components/ProjectsEncourage";
 
 const PROJECTS_IMG_PATH = "/img/projects";
 
@@ -79,12 +80,12 @@ type ProjectsModuleProps = {};
 
 const ProjectsModule: React.FC<ProjectsModuleProps> = () => {
   return (
-    <div data-test-id="projects_module" id="projects">
-      <Heading className="mx-auto after:w-full flex items-center mb-10">
+    <div data-test-id="projects_module" id="projects" className="space-y-14">
+      <Heading className="mx-auto after:w-full flex items-center">
         My projects{" "}
         <img width={40} height={40} src={writing} alt="writing hand" />{" "}
       </Heading>
-      <div className="grid grid-cols-2 gap-x-10 gap-y-14">
+      <div className="grid grid-cols-2 gap-x-10 gap-y-14 max-w-[1100px] mx-auto">
         {Array(2)
           .fill(projects)
           .flat()
@@ -92,6 +93,7 @@ const ProjectsModule: React.FC<ProjectsModuleProps> = () => {
             <Project key={project.id} {...project} />
           ))}
       </div>
+      <ProjectsEncourage />
     </div>
   );
 };

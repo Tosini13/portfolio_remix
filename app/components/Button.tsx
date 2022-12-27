@@ -4,14 +4,23 @@ import { twMerge } from "tailwind-merge";
 const themeClassName =
   "rounded-full bg-primary text-secondary px-8 py-3 hover:bg-primary-light transition-all duration-150 whitespace-nowrap";
 
-type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
+const secondaryThemeClassName = " bg-extra hover:bg-extra-light";
+type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
+  secondary?: boolean;
+};
 
 const Button: React.FC<ButtonProps> = ({
   className: customClassName,
+  secondary,
   ...props
 }) => {
   const className = React.useMemo(
-    () => twMerge(themeClassName, customClassName),
+    () =>
+      twMerge(
+        themeClassName,
+        secondary ? secondaryThemeClassName : "",
+        customClassName
+      ),
     [customClassName]
   );
   return <button data-test-id="button" className={className} {...props} />;
