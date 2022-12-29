@@ -28,7 +28,7 @@ const HamburgerButton: React.FC<THamburgerButtonProps> = ({
     <div
       data-testid="hamburger-button"
       onClick={onClick}
-      className="w-[20px] cursor-pointer space-y-1 no-focus"
+      className="w-[25px] cursor-pointer space-y-1 no-focus"
     >
       <div className={topStyle} />
       <div className={centerStyle} />
