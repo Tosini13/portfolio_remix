@@ -24,7 +24,7 @@ const ProjectsEncourage: React.FC<ProjectsEncourageProps> = ({}) => {
         src={logo}
         alt="logo background"
       />
-      <div className="relative flex justify-evenly items-center">
+      <div className="relative flex flex-col md:flex-row justify-evenly items-center space-x-1 space-y-8 md:space-y-0">
         <h4 className="text-lg font-semibold">Do you like my projects?</h4>
         <Paragraph className="leading-7 text-sm">
           Let me help you improve/build your
