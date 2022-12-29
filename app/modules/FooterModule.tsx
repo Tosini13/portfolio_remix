@@ -36,7 +36,7 @@ const FooterModule: React.FC<FooterModuleProps> = () => {
               ))}
             </div>
           </div>
-          <div className="flex items-center space-x-1">
+          <div className="flex items-center space-x-1 flex-wrap">
             {MEDIA_LINKS.map((link) => (
               <ButtonLink className="px-3" key={link.id} href={link.href}>
                 <img
