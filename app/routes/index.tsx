@@ -5,7 +5,7 @@ import HeaderModule from "~/modules/HeaderModule";
 import HomeModule from "~/modules/HomeModule";
 import ProjectsModule from "~/modules/ProjectsModule";
 import StoryModule from "~/modules/StoryModule";
-import Testimonials from "~/modules/Testimonials";
+import TestimonialsModule from "~/modules/TestimonialsModule";
 
 export default function Index() {
   return (
@@ -14,7 +14,7 @@ export default function Index() {
       <main className="space-y-[150px] max-w-[1200px] mx-auto mb-20">
         <HomeModule />
         <StoryModule />
-        <Testimonials />
+        <TestimonialsModule />
         <ProjectsModule />
         <ExperienceModule />
         <ContactModule />
