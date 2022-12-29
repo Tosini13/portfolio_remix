@@ -1,15 +1,16 @@
 import Heading from "~/components/Heading";
 import Paragraph from "~/components/Paragraph";
+import Section from "~/components/Section";
 import MSG_ICON from "../../public/img/icons/msg.svg";
 
 type TestimonialsModuleProps = {};
 
 const TestimonialsModule: React.FC<TestimonialsModuleProps> = () => {
   return (
-    <section
+    <Section
       data-test-id="testimonials_module"
       id="testimonials"
-      className="max-w-[1000px] mx-6 lg:mx-auto space-y-10 md:space-y-6"
+      className="max-w-[1024px] space-y-10 md:space-y-6"
     >
       <Heading className="md:mx-auto flex items-center after:w-full">
         Testimonials{" "}
@@ -40,7 +41,7 @@ const TestimonialsModule: React.FC<TestimonialsModuleProps> = () => {
         Radosław Warish <br />{" "}
         <span className="text-tertiary">from Brainly</span>
       </Paragraph>
-    </section>
+    </Section>
   );
 };
 

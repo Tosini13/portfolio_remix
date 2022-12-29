@@ -1,14 +1,11 @@
 import call from "../../public/img/icons/call.svg";
-import github from "../../public/img/icons/github.svg";
-import linkedIn from "../../public/img/icons/linkedIn.svg";
-import instagram from "../../public/img/icons/instagram.svg";
-import facebook from "../../public/img/icons/facebook.svg";
 import telephone from "../../public/img/icons/telephone.svg";
 import mail from "../../public/img/icons/mail.svg";
 import Heading from "~/components/Heading";
 import Button, { ButtonLink } from "~/components/Button";
 import Paragraph from "~/components/Paragraph";
 import { MEDIA_LINKS } from "~/utils/media";
+import Section from "~/components/Section";
 
 const classNames = {
   headings: "uppercase text-sm text-tertiary font-semibold",
@@ -25,11 +22,7 @@ type ContactModuleProps = {};
 
 const ContactModule: React.FC<ContactModuleProps> = ({}) => {
   return (
-    <section
-      data-test-id="contact_module"
-      id="contact"
-      className="space-y-10 mx-6 lg:mx-0"
-    >
+    <Section data-test-id="contact_module" id="contact" className="space-y-10">
       <Heading className="md:mx-auto flex items-center">
         Contact{" "}
         <img
@@ -94,7 +87,7 @@ const ContactModule: React.FC<ContactModuleProps> = ({}) => {
           ))}
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 

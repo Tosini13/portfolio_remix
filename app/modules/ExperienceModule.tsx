@@ -1,5 +1,6 @@
 import Experience, { ExperienceType } from "~/components/Experience";
 import Heading from "~/components/Heading";
+import Section from "~/components/Section";
 import ok from "../../public/img/icons/ok.svg";
 import steps from "../../public/img/photos/steps.svg";
 
@@ -180,10 +181,10 @@ type ExperienceModuleProps = {};
 
 const ExperienceModule: React.FC<ExperienceModuleProps> = () => {
   return (
-    <section
+    <Section
       data-test-id="experience_module"
       id="experience"
-      className="relative mx-6 lg:mx-0"
+      className="relative"
     >
       {/**
        * @todo add the img to background with repeat in whole height
@@ -197,7 +198,7 @@ const ExperienceModule: React.FC<ExperienceModuleProps> = () => {
         <Heading className="md:mx-auto flex items-center mb-20">
           Experience <img width={40} height={40} src={ok} alt="ok hand" />{" "}
         </Heading>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-20 max-w-[1100px] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-20 max-w-[1024px] mx-auto">
           {experience.map((exp) => (
             <div
               key={exp.id}
@@ -208,7 +209,7 @@ const ExperienceModule: React.FC<ExperienceModuleProps> = () => {
           ))}
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 

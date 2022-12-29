@@ -3,6 +3,7 @@ import Heading from "~/components/Heading";
 import profilePhoto from "../../public/img/photos/jb_sea_photo.png";
 import depuytren from "../../public/img/icons/depuytren.svg";
 import Paragraph from "~/components/Paragraph";
+import Section from "~/components/Section";
 
 const heading = (
   <Heading className="flex items-center">
@@ -21,10 +22,10 @@ type StoryModuleProps = {};
 
 const StoryModule: React.FC<StoryModuleProps> = ({}) => {
   return (
-    <section
+    <Section
       data-test-id="story_module"
       id="story"
-      className="max-w-[1100px] lg:mx-auto mx-6 flex flex-col md:flex-row space-y-8 md:space-y-0 space-x-0 md:space-x-8 items-center justify-between"
+      className="max-w-[1024px] lg:mx-auto flex flex-col md:flex-row space-y-8 md:space-y-0 space-x-0 md:space-x-8 items-center justify-between"
     >
       <div className="block md:hidden self-start">{heading}</div>
       <div className="space-y-6 max-w-[600px] order-3">
@@ -51,7 +52,7 @@ const StoryModule: React.FC<StoryModuleProps> = ({}) => {
       >
         <img className="grayscale" src={profilePhoto} alt="photo about me" />
       </div>
-    </section>
+    </Section>
   );
 };
 

@@ -11,6 +11,7 @@ import brainlyLogo from "../../public/img/logos/brainly_logo.png";
 import Paragraph from "~/components/Paragraph";
 import { MEDIA_LINKS } from "~/utils/media";
 import Slider from "~/components/Slider";
+import Section from "~/components/Section";
 
 export type LogoType = {
   id: string;
@@ -55,10 +56,10 @@ type HomeModuleProps = {};
 
 const HomeModule: React.FC<HomeModuleProps> = () => {
   return (
-    <section
+    <Section
       data-test-id="home_module"
       id="home"
-      className="max-w-[1100px] mx-auto space-y-12"
+      className="max-w-[1024px] mx-auto space-y-12 -mt-12"
     >
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="space-y-6 lg:mt-20 order-2 mx-6 lg:mx-0">
@@ -122,7 +123,7 @@ const HomeModule: React.FC<HomeModuleProps> = () => {
         </div>
       </div>
       <Slider items={logos} />
-    </section>
+    </Section>
   );
 };
 

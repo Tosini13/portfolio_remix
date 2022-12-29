@@ -15,6 +15,10 @@ module.exports = {
       screens: {
         'semi-md': '900px',
       },
+      margins: {
+        'desktop': '84px',
+        'mobile': '71px',
+      },
       colors: {
         "primary": "#24242E",
         "primary-light": "#343453",
@@ -48,6 +52,12 @@ module.exports = {
           '-moz-user-select': 'none',
           '-ms-user-select': 'none',
           'user-select': 'none',
+        },
+        '.pt-section-desktop': {
+          'padding-top': '89px'
+        },
+        '.pt-section-mobile': {
+          'padding-top': '76px'
         },
       })
     })],
