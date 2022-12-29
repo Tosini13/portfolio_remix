@@ -39,7 +39,7 @@ const HeaderMobile: React.FC<HeaderMobileProps> = ({ links }) => {
     () =>
       twMerge(
         headerThemeClassName,
-        isOnTop ? "shadow-none" : open ? "md:shadow-md" : "shadow-md"
+        !isOnTop && !open ? "shadow-md" : "shadow-none"
       ),
     [isOnTop, open]
   );
