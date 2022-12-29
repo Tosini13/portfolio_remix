@@ -80,12 +80,16 @@ type ProjectsModuleProps = {};
 
 const ProjectsModule: React.FC<ProjectsModuleProps> = () => {
   return (
-    <div data-test-id="projects_module" id="projects" className="space-y-14">
-      <Heading className="mx-auto after:w-full flex items-center">
+    <div
+      data-test-id="projects_module"
+      id="projects"
+      className="space-y-14 mx-6 lg:mx-0"
+    >
+      <Heading className="md:mx-auto after:w-full flex items-center">
         My projects{" "}
         <img width={40} height={40} src={writing} alt="writing hand" />{" "}
       </Heading>
-      <div className="grid grid-cols-2 gap-x-10 gap-y-14 max-w-[1100px] mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-14 max-w-[1100px] mx-auto">
         {Array(2)
           .fill(projects)
           .flat()

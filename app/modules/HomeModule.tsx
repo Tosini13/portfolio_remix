@@ -60,9 +60,9 @@ const HomeModule: React.FC<HomeModuleProps> = () => {
       id="home"
       className="max-w-[1100px] mx-auto space-y-12"
     >
-      <div className="grid grid-cols-2">
-        <div className="space-y-6 lg:mt-20">
-          <h1 className="text-5xl font-medium">
+      <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="space-y-6 lg:mt-20 order-2 mx-6 lg:mx-0">
+          <h1 className="text-4xl font-medium leading-[3rem]">
             Hi.{" "}
             <img
               className="inline"
@@ -87,10 +87,10 @@ const HomeModule: React.FC<HomeModuleProps> = () => {
             <br />
             and hyperfriendly <span className="font-semibold">co-worker</span>?
           </Paragraph>
-          <Button className="bg-extra hover:bg-extra-light">
+          <Button className="bg-extra hover:bg-extra-light w-full md:w-auto">
             Check my skills & experience
           </Button>
-          <div className="flex items-center space-x-2">
+          <div className="flex flex-wrap items-center space-x-2 justify-center md:justify-start">
             {MEDIA_LINKS.filter((link) =>
               ["github", "linkedIn", "insta", "fb"].includes(link.id)
             ).map((link) => (
@@ -105,7 +105,7 @@ const HomeModule: React.FC<HomeModuleProps> = () => {
             ))}
           </div>
         </div>
-        <div className="relative pr-8 h-fit">
+        <div className="relative pr-8 h-fit order-1 md:order-3">
           <img
             className="absolute opacity-30 -pr-8"
             width={"100%"}
@@ -118,12 +118,10 @@ const HomeModule: React.FC<HomeModuleProps> = () => {
             src={profilePhoto}
             alt="profile photo"
           />
-          <div className="absolute top-0 left-0 w-full h-full shadow-[inset_0px_0px_50px_25px_white,inset_0px_-80px_100px_31px_white,inset_0px_-80px_150px_100px_rgb(255_255_255_/_40%)]" />
+          <div className="absolute top-1 left-0 w-full h-full shadow-[inset_0px_0px_50px_25px_white,inset_0px_-80px_100px_31px_white,inset_0px_-80px_150px_100px_rgb(255_255_255_/_40%)]" />
         </div>
       </div>
-      {/* <div className="flex justify-between items-center overflow-hidden"> */}
       <Slider items={logos} />
-      {/* </div> */}
     </section>
   );
 };
