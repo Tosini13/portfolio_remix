@@ -6,20 +6,31 @@ import facebook from "../../public/img/icons/facebook.svg";
 import telephone from "../../public/img/icons/telephone.svg";
 import mail from "../../public/img/icons/mail.svg";
 import Heading from "~/components/Heading";
-import Button from "~/components/Button";
+import Button, { ButtonLink } from "~/components/Button";
 import Paragraph from "~/components/Paragraph";
+import { MEDIA_LINKS } from "~/utils/media";
 
 const classNames = {
   headings: "uppercase text-sm text-tertiary font-semibold",
   sections: "space-y-4",
 };
 
+const MEDIA_BUTTONS_TEXT = new Map();
+MEDIA_BUTTONS_TEXT.set("github", "Check my Github");
+MEDIA_BUTTONS_TEXT.set("linkedIn", "Find me on LinkedIn");
+MEDIA_BUTTONS_TEXT.set("insta", "Don't forget about my IG");
+MEDIA_BUTTONS_TEXT.set("fb", "Here is my FB");
+
 type ContactModuleProps = {};
 
 const ContactModule: React.FC<ContactModuleProps> = ({}) => {
   return (
-    <section data-test-id="contact_module" id="contact" className="space-y-10">
-      <Heading className="flex items-center">
+    <section
+      data-test-id="contact_module"
+      id="contact"
+      className="space-y-10 mx-6 lg:mx-0"
+    >
+      <Heading className="mx-left md:mx-auto flex items-center">
         Contact{" "}
         <img
           className="ml-2"
@@ -31,15 +42,15 @@ const ContactModule: React.FC<ContactModuleProps> = ({}) => {
       </Heading>
       <div className={classNames.sections}>
         <h5 className={classNames.headings}>Do you want to meet?</h5>
-        <div className="flex space-x-2">
+        <div className="flex flex-col md:flex-row items-start space-x-0 md:space-x-2 space-y-2 md:space-y-0">
           <Button>Let's set up a call</Button>
-          <Button>Let's text</Button>
+          <Button secondary>Let's text</Button>
         </div>
       </div>
       <div className={classNames.sections}>
         <h5 className={classNames.headings}>Email & phone number</h5>
-        <div className="flex space-x-4">
-          <Paragraph className="flex items-center">
+        <div className="flex flex-wrap">
+          <Paragraph className="flex items-center whitespace-nowrap mr-4 mb-2">
             <img
               className="mr-2"
               height={20}
@@ -49,7 +60,7 @@ const ContactModule: React.FC<ContactModuleProps> = ({}) => {
             />
             <address className="underline">jbartos13@gmail.com</address>
           </Paragraph>
-          <Paragraph className="flex items-center">
+          <Paragraph className="flex items-center whitespace-nowrap mr-4 mb-2">
             <img
               className="mr-2"
               height={20}
@@ -63,47 +74,24 @@ const ContactModule: React.FC<ContactModuleProps> = ({}) => {
       </div>
       <div className={classNames.sections}>
         <h5 className={classNames.headings}>Social media</h5>
-        <div className="flex space-x-2">
-          <Button className="flex items-center">
-            <img
-              className="mr-2"
-              height={20}
-              width={20}
-              src={github}
-              alt="github icon"
-            />
-            Check my Github
-          </Button>
-          <Button className="flex items-center">
-            <img
-              className="mr-2"
-              height={20}
-              width={20}
-              src={linkedIn}
-              alt="github icon"
-            />
-            Find me on LinkedIn
-          </Button>
-          <Button className="flex items-center">
-            <img
-              className="mr-2"
-              height={20}
-              width={20}
-              src={instagram}
-              alt="github icon"
-            />
-            Don't forget about my IG
-          </Button>
-          <Button className="flex items-center">
-            <img
-              className="mr-2"
-              height={20}
-              width={20}
-              src={facebook}
-              alt="github icon"
-            />
-            Here is my FB
-          </Button>
+        <div className="flex flex-wrap">
+          {MEDIA_LINKS.filter((link) =>
+            ["github", "linkedIn", "insta", "fb"].includes(link.id)
+          ).map((link) => (
+            <ButtonLink
+              className="flex items-center mr-2 mb-2"
+              href={link.href}
+            >
+              <img
+                className="mr-2"
+                height={20}
+                width={20}
+                src={link.iconSrc}
+                alt="github icon"
+              />
+              {MEDIA_BUTTONS_TEXT.get(link.id)}
+            </ButtonLink>
+          ))}
         </div>
       </div>
     </section>
