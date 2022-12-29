@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin')
 
 const defaultTheme = require('tailwindcss/defaultTheme');
 
@@ -11,6 +12,9 @@ module.exports = {
   },
   theme: {
     extend: {
+      screens: {
+        'semi-md': '900px',
+      },
       colors: {
         "primary": "#24242E",
         "primary-light": "#343453",
@@ -24,5 +28,18 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function({ addUtilities }) {
+      addUtilities({
+        '.no-focus': {
+          '-webkit-tap-highlight-color': 'transparent',
+          '-webkit-touch-callout': 'none',
+          '-webkit-user-select': 'none',
+          '-html-user-select': 'none',
+          '-moz-user-select': 'none',
+          '-ms-user-select': 'none',
+          'user-select': 'none',
+        },
+      })
+    })],
 }

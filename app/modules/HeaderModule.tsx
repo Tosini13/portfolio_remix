@@ -1,13 +1,15 @@
 import React from "react";
 import { twMerge } from "tailwind-merge";
 import Button from "~/components/Button";
+import HeaderDesktop from "~/components/HeaderDesktop";
+import HeaderMobile from "~/components/HeaderMobile";
 import Link from "~/components/Link";
 import Logo from "~/components/Logo";
 
 const headerThemeClassName =
-  "transition-shadow duration-300 ease-out w-full sticky top-0 left-0 z-50 bg-[rgba(255,255,255,0.96)]";
+  "transition-shadow duration-300 ease-out w-full sticky top-0 left-0 z-50 bg-primary md:bg-[rgba(255,255,255,0.96)]";
 
-type TLinkType = {
+export type TLinkType = {
   title: string;
   href: string;
 };
@@ -75,9 +77,16 @@ const HeaderModule: React.FC<HeaderModuleProps> = () => {
 
   return (
     <header data-test-id="header_module" ref={ref} className={headerClassName}>
-      <div className="max-w-[1200px] mx-auto  flex  items-center py-5 ">
+      <div className="hidden md:block">
+        <HeaderDesktop links={links} />
+      </div>
+      <div className="block md:hidden">
+        <HeaderMobile links={links} />
+      </div>
+
+      {/* <div className="max-w-[1200px] mx-auto  flex  items-center py-5 ">
         <Logo />
-        <div className="ml-10 flex space-x-8 items-center">
+        <div className="ml-10 space-x-8 items-center">
           {links.map((link) => (
             <Link
               key={`${link.title}_${link.href}`}
@@ -87,7 +96,7 @@ const HeaderModule: React.FC<HeaderModuleProps> = () => {
           ))}
         </div>
         <Button className="ml-auto">Let's meet</Button>
-      </div>
+      </div> */}
     </header>
   );
 };
