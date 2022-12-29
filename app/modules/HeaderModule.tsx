@@ -7,7 +7,7 @@ import Link from "~/components/Link";
 import Logo from "~/components/Logo";
 
 const headerThemeClassName =
-  "transition-shadow duration-300 ease-out w-full sticky top-0 left-0 z-50 bg-primary md:bg-[rgba(255,255,255,0.96)]";
+  "transition-shadow duration-300 ease-out w-full sticky top-0 left-0 z-50";
 
 export type TLinkType = {
   title: string;
@@ -83,20 +83,6 @@ const HeaderModule: React.FC<HeaderModuleProps> = () => {
       <div className="block md:hidden">
         <HeaderMobile links={links} />
       </div>
-
-      {/* <div className="max-w-[1200px] mx-auto  flex  items-center py-5 ">
-        <Logo />
-        <div className="ml-10 space-x-8 items-center">
-          {links.map((link) => (
-            <Link
-              key={`${link.title}_${link.href}`}
-              title={link.title}
-              href={link.href}
-            />
-          ))}
-        </div>
-        <Button className="ml-auto">Let's meet</Button>
-      </div> */}
     </header>
   );
 };
