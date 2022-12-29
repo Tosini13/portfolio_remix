@@ -25,7 +25,16 @@ module.exports = {
       },
       fontFamily: {
         poppins: ['"Poppins"', ...defaultTheme.fontFamily.sans]
-      }
+      },
+      keyframes: {
+        'scroll': {
+          '0%': { left: '0' },
+          '100%': { left: '-100%' },
+        },
+      },
+      animation: {
+        'banner-scroll': 'scroll 15s linear infinite',
+      },
     },
   },
   plugins: [

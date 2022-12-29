@@ -10,9 +10,46 @@ import apptimiaLogo from "../../public/img/logos/apptimia_logo.png";
 import brainlyLogo from "../../public/img/logos/brainly_logo.png";
 import Paragraph from "~/components/Paragraph";
 import { MEDIA_LINKS } from "~/utils/media";
+import Slider from "~/components/Slider";
 
-const imgClassName =
-  "grayscale h-fit hover:grayscale-0 transition-all duration-300";
+export type LogoType = {
+  id: string;
+  src: string;
+  alt: string;
+};
+
+const logos: Array<LogoType> = [
+  {
+    id: "zut",
+    src: zutLogo,
+    alt: "zut logo",
+  },
+  {
+    id: "paCollege",
+    src: paCollegeLogo,
+    alt: "paCollege logo",
+  },
+  {
+    id: "dorea",
+    src: doreaLogo,
+    alt: "dorea logo",
+  },
+  {
+    id: "mayeryn",
+    src: mayerynLogo,
+    alt: "mayeryn logo",
+  },
+  {
+    id: "apptimia",
+    src: apptimiaLogo,
+    alt: "apptimia logo",
+  },
+  {
+    id: "brainly",
+    src: brainlyLogo,
+    alt: "brainly logo",
+  },
+];
 
 type HomeModuleProps = {};
 
@@ -84,18 +121,9 @@ const HomeModule: React.FC<HomeModuleProps> = () => {
           <div className="absolute top-0 left-0 w-full h-full shadow-[inset_0px_0px_50px_25px_white,inset_0px_-80px_100px_31px_white,inset_0px_-80px_150px_100px_rgb(255_255_255_/_40%)]" />
         </div>
       </div>
-      <div className="flex justify-between items-center">
-        <img className={imgClassName} src={zutLogo} alt="zut logo" />
-        <img
-          className={imgClassName}
-          src={paCollegeLogo}
-          alt="PA College logo"
-        />
-        <img className={imgClassName} src={doreaLogo} alt="ZUT logo" />
-        <img className={imgClassName} src={mayerynLogo} alt="Mayeryn logo" />
-        <img className={imgClassName} src={apptimiaLogo} alt="Apptimia logo" />
-        <img className={imgClassName} src={brainlyLogo} alt="Brainly logo" />
-      </div>
+      {/* <div className="flex justify-between items-center overflow-hidden"> */}
+      <Slider items={logos} />
+      {/* </div> */}
     </section>
   );
 };
