@@ -11,7 +11,8 @@ import brainlyLogo from "../../public/img/logos/brainly_logo.png";
 import Paragraph from "~/components/Paragraph";
 import { MEDIA_LINKS } from "~/utils/media";
 
-const imgClassName = "grayscale hover:grayscale-0 transition-all duration-300";
+const imgClassName =
+  "grayscale h-fit hover:grayscale-0 transition-all duration-300";
 
 type HomeModuleProps = {};
 
@@ -20,7 +21,7 @@ const HomeModule: React.FC<HomeModuleProps> = () => {
     <section
       data-test-id="home_module"
       id="home"
-      className="max-w-[1100px] mx-auto space-y-10"
+      className="max-w-[1100px] mx-auto space-y-12"
     >
       <div className="grid grid-cols-2">
         <div className="space-y-6 lg:mt-20">
@@ -83,7 +84,7 @@ const HomeModule: React.FC<HomeModuleProps> = () => {
           <div className="absolute top-0 left-0 w-full h-full shadow-[inset_0px_0px_50px_25px_white,inset_0px_-80px_100px_31px_white,inset_0px_-80px_150px_100px_rgb(255_255_255_/_40%)]" />
         </div>
       </div>
-      <div className="flex justify-between">
+      <div className="flex justify-between items-center">
         <img className={imgClassName} src={zutLogo} alt="zut logo" />
         <img
           className={imgClassName}

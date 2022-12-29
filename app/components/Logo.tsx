@@ -5,7 +5,7 @@ import SECONDARY_LOGO from "../../public/img/logos/secondary.logo.svg";
 
 const classNames = {
   title: {
-    theme: "ml-1 font-semibold text-primary",
+    theme: "ml-1 font-semibold text-primary text-sm",
     secondary: "text-secondary",
   },
 };
