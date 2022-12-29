@@ -11,7 +11,7 @@ const TestimonialsModule: React.FC<TestimonialsModuleProps> = () => {
       id="testimonials"
       className="max-w-[1000px] mx-6 lg:mx-auto space-y-10 md:space-y-6"
     >
-      <Heading className="mx-left md:mx-auto flex items-center after:w-full">
+      <Heading className="md:mx-auto flex items-center after:w-full">
         Testimonials{" "}
         <img
           className="ml-2"

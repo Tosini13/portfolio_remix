@@ -30,7 +30,7 @@ const ContactModule: React.FC<ContactModuleProps> = ({}) => {
       id="contact"
       className="space-y-10 mx-6 lg:mx-0"
     >
-      <Heading className="mx-left md:mx-auto flex items-center">
+      <Heading className="md:mx-auto flex items-center">
         Contact{" "}
         <img
           className="ml-2"

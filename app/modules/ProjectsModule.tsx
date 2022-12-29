@@ -85,7 +85,7 @@ const ProjectsModule: React.FC<ProjectsModuleProps> = () => {
       id="projects"
       className="space-y-14 mx-6 lg:mx-0"
     >
-      <Heading className="mx-left md:mx-auto after:w-full flex items-center">
+      <Heading className="md:mx-auto after:w-full flex items-center">
         My projects{" "}
         <img width={40} height={40} src={writing} alt="writing hand" />{" "}
       </Heading>

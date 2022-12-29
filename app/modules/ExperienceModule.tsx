@@ -194,7 +194,7 @@ const ExperienceModule: React.FC<ExperienceModuleProps> = () => {
         alt="steps"
       />
       <div className="relative space-y-10">
-        <Heading className="mx-left md:mx-auto flex items-center mb-20">
+        <Heading className="md:mx-auto flex items-center mb-20">
           Experience <img width={40} height={40} src={ok} alt="ok hand" />{" "}
         </Heading>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-20 max-w-[1100px] mx-auto">

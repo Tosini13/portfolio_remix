@@ -19,9 +19,11 @@ const FooterModule: React.FC<FooterModuleProps> = () => {
           src={LOGO_ICON}
           alt="logo background"
         />
-        <div className="relative max-w-[1200px] mx-auto flex justify-between items-center">
-          <Logo secondary />
-          <div className="flex justify-between items-center">
+        <div className="relative max-w-[1200px] mx-auto flex flex-wrap justify-between items-center">
+          <div className="md:mb-2 mx-auto sm:mx-0">
+            <Logo secondary />
+          </div>
+          <div className="mb-2 md:flex justify-between items-center hidden">
             <div className="flex space-x-6 items-center">
               <Paragraph className="text-tertiary font-medium">
                 Shortcut
@@ -36,7 +38,7 @@ const FooterModule: React.FC<FooterModuleProps> = () => {
               ))}
             </div>
           </div>
-          <div className="flex items-center space-x-1 flex-wrap">
+          <div className="mb-2 sm:flex items-center space-x-1 flex-wrap hidden">
             {MEDIA_LINKS.map((link) => (
               <ButtonLink className="px-3" key={link.id} href={link.href}>
                 <img
@@ -50,14 +52,10 @@ const FooterModule: React.FC<FooterModuleProps> = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#151522] p-4 flex justify-center items-center divide-x divide-tertiary">
-        <Paragraph className="text-xs text-tertiary px-4">
-          Copyrights 2022
-        </Paragraph>
-        <Paragraph className="text-xs text-tertiary px-4">
-          Low & Privacy
-        </Paragraph>
-        <Paragraph className="text-xs text-tertiary px-4">
+      <div className="bg-[#151522] p-4 flex justify-center items-center divide-x divide-tertiary text-xs text-tertiary text-center">
+        <Paragraph className="px-4 leading-4">Copyrights 2022</Paragraph>
+        <Paragraph className="px-4 leading-4">Low & Privacy</Paragraph>
+        <Paragraph className="px-4 leading-4">
           Crafted by J&K Bros. Company
         </Paragraph>
       </div>
