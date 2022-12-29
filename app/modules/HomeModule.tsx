@@ -61,7 +61,7 @@ const HomeModule: React.FC<HomeModuleProps> = () => {
       className="max-w-[1100px] mx-auto space-y-12"
     >
       <div className="grid grid-cols-1 md:grid-cols-2">
-        <div className="space-y-6 lg:mt-20 order-2 px-6 lg:px-0">
+        <div className="space-y-6 lg:mt-20 order-2 mx-6 lg:mx-0">
           <h1 className="text-4xl font-medium leading-[3rem]">
             Hi.{" "}
             <img
