@@ -33,7 +33,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="font-poppins text-primary">
+      <body className="font-poppins text-primary text-sm">
         <Outlet />
         <ScrollRestoration />
         <Scripts />

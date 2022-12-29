@@ -38,7 +38,7 @@ const Project: React.FC<ProjectProps> = ({
         src={logo}
         alt="logo"
       />
-      <div className="p-10 space-y-6">
+      <div className="p-10 space-y-4">
         <div className="relative -m-4 mb-0 p-4 pb-10 overflow-y-hidden">
           <img
             className="rounded-2xl shadow-lg"
@@ -52,7 +52,7 @@ const Project: React.FC<ProjectProps> = ({
           />
           <div className="absolute top-0 left-0 w-full h-full shadow-[inset_0px_-10px_15px_0px_white,inset_0px_-10px_20px_8px_white]" />
         </div>
-        <h3 className="text-3xl font-medium">{title}</h3>
+        <h3 className="text-xl font-medium">{title}</h3>
         <div className="flex flex-wrap items-center">
           {technologies.map((technology) => (
             <div

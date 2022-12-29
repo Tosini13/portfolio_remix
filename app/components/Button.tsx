@@ -2,7 +2,7 @@ import * as React from "react";
 import { twMerge } from "tailwind-merge";
 
 const themeClassName =
-  "rounded-full bg-primary text-secondary px-8 py-3 hover:bg-primary-light transition-all duration-150 whitespace-nowrap";
+  "rounded-full bg-primary font-semibold tracking-wider text-secondary px-8 py-3 hover:bg-primary-light transition-all duration-150 whitespace-nowrap";
 
 const secondaryThemeClassName = " bg-extra hover:bg-extra-light";
 type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
