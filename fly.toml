@@ -1,6 +1,6 @@
-# fly.toml file generated for portfolio-jakub-bartosik on 2022-12-29T20:26:11+01:00
+# fly.toml file generated for portfolio-bartosik-jakub on 2022-12-30T10:48:16+01:00
 
-app = "portfolio-jakub-bartosik"
+app = "portfolio-bartosik-jakub"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
