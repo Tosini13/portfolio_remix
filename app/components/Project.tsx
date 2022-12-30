@@ -27,8 +27,9 @@ const Project: React.FC<ProjectProps> = ({
   return (
     <div
       data-testId="project"
-      className="relative rounded-3xl border-2 border-[#E8E8E8] overflow-hidden
+      className="group relative rounded-3xl border-2 border-[#E8E8E8] overflow-hidden px-0
       before:content-['</>'] before:absolute before:text-tertiary before:font-bold before:text-9xl before:-bottom-10 before:-right-10 before:opacity-5
+      transition-all duration-300 hover:bg-extra hover:shadow-md hover:border-0 hover:px-1 hover:text-secondary cursor-pointer
       "
     >
       <img
@@ -50,14 +51,15 @@ const Project: React.FC<ProjectProps> = ({
             src={mobileSrc}
             alt={`${title} mobile view`}
           />
-          <div className="absolute top-0 left-0 w-full h-full shadow-[inset_0px_-10px_15px_0px_white,inset_0px_-10px_20px_8px_white]" />
+          <div className="absolute top-0 left-0 w-full h-full shadow-[inset_0px_-10px_15px_0px_white,inset_0px_-10px_20px_8px_white] group-hover:shadow-extra transition-all duration-300" />
         </div>
         <h3 className="text-xl font-medium">{title}</h3>
         <div className="flex flex-wrap items-center">
           {technologies.map((technology) => (
             <div
               key={technology.id}
-              className="ml-1 mt-1 rounded-full bg-tertiary text-secondary py-1.5 px-3 font-medium whitespace-nowrap"
+              className="ml-1 mt-1 rounded-full bg-tertiary text-secondary py-1.5 px-3 font-medium whitespace-nowrap
+              group-hover:text-extra group-hover:bg-secondary transition-all duration-300"
             >
               {technology.name}
             </div>
