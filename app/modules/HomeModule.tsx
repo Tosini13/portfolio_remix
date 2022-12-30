@@ -1,4 +1,4 @@
-import Button, { ButtonLink } from "~/components/Button";
+import { ButtonLink, ButtonIconLink } from "~/components/Button";
 import wave from "../../public/img/icons/wave.svg";
 import profilePhoto from "../../public/img/photos/jb.photo.png";
 import logo from "../../public/img/logos/logo.svg";
@@ -59,11 +59,11 @@ const HomeModule: React.FC<HomeModuleProps> = () => {
     <Section
       data-testId="home_module"
       id="home"
-      className="max-w-[1024px] mx-auto space-y-12 -mt-12"
+      className="max-w-[1024px] mx-auto space-y-20 -mt-12"
     >
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="space-y-6 lg:mt-20 order-2 mx-6 lg:mx-0">
-          <h1 className="text-4xl font-medium leading-[3rem]">
+          <h1 className="text-home-heading font-medium leading-[3rem]">
             Hi.{" "}
             <img
               className="inline"
@@ -98,8 +98,8 @@ const HomeModule: React.FC<HomeModuleProps> = () => {
             {MEDIA_LINKS.filter((link) =>
               ["github", "linkedIn", "insta"].includes(link.id)
             ).map((link) => (
-              <ButtonLink
-                className="px-3"
+              <ButtonIconLink
+                className="px-4"
                 key={link.id}
                 href={link.href}
                 target="_blank"
@@ -110,7 +110,7 @@ const HomeModule: React.FC<HomeModuleProps> = () => {
                   src={link.iconSrc}
                   alt={"media icon"}
                 />
-              </ButtonLink>
+              </ButtonIconLink>
             ))}
           </div>
         </div>

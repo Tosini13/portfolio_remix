@@ -4,7 +4,7 @@ import Logo from "~/components/Logo";
 import Paragraph from "~/components/Paragraph";
 import { links } from "./HeaderModule";
 import { EMAIL_ADDRESS, MEDIA_LINKS, PHONE_NUMBER } from "~/utils/media";
-import Button, { ButtonLink } from "~/components/Button";
+import { ButtonIconLink } from "~/components/Button";
 
 const ICONS_IMG_PATH = "/img/icons";
 
@@ -42,30 +42,24 @@ const FooterModule: React.FC<FooterModuleProps> = () => {
           </div>
           <div className="mb-2 sm:flex items-center space-x-1 flex-wrap hidden">
             {MEDIA_LINKS.map((link) => (
-              <ButtonLink
-                className="px-3"
-                key={link.id}
-                href={link.href}
-                target="_blank"
-              >
+              <ButtonIconLink key={link.id} href={link.href} target="_blank">
                 <img
                   height={20}
                   width={20}
                   src={link.iconSrc}
                   alt={"media icon"}
                 />
-              </ButtonLink>
+              </ButtonIconLink>
             ))}
-            <ButtonLink className="px-3" href={`mailto:${EMAIL_ADDRESS}`}>
+            <ButtonIconLink className="px-3" href={`mailto:${EMAIL_ADDRESS}`}>
               <img
                 height={20}
                 width={20}
                 src={`${ICONS_IMG_PATH}/mail.secondary.icon.svg`}
                 alt={"mail icon"}
               />
-            </ButtonLink>
-            <ButtonLink
-              className="px-3"
+            </ButtonIconLink>
+            <ButtonIconLink
               href={`https://wa.me/${PHONE_NUMBER}`}
               target={"_blank"}
               rel="noreferrer"
@@ -76,7 +70,7 @@ const FooterModule: React.FC<FooterModuleProps> = () => {
                 src={`${ICONS_IMG_PATH}/telephone.secondary.icon.svg`}
                 alt={"phone icon"}
               />
-            </ButtonLink>
+            </ButtonIconLink>
           </div>
         </div>
       </div>

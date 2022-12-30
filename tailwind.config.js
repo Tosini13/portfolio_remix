@@ -19,6 +19,9 @@ module.exports = {
         'desktop': '84px',
         'mobile': '71px',
       },
+      fontSize: {
+        'home-heading': '2.7rem'
+      },
       colors: {
         "primary": "#24242E",
         "primary-light": "#343453",
