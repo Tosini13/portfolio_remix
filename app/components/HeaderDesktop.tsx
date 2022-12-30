@@ -20,9 +20,10 @@ const HeaderDesktop: React.FC<HeaderDesktopProps> = ({ links }) => {
   React.useEffect(() => {
     const handleScroll = () => {
       const position = window.pageYOffset;
-      if (position > 30) {
+
+      if (position > 50) {
         setIsOnTop(false);
-      } else {
+      } else if (position < 10) {
         setIsOnTop(true);
       }
     };
@@ -40,9 +41,18 @@ const HeaderDesktop: React.FC<HeaderDesktopProps> = ({ links }) => {
     [isOnTop]
   );
 
+  const headerContentClassName = React.useMemo(
+    () =>
+      twMerge(
+        "max-w-[1024px] mx-auto px-2 xl:px-0 flex items-center transition-all duration-300 py-4",
+        isOnTop ? "py-10" : ""
+      ),
+    [isOnTop]
+  );
+
   return (
     <div data-testId="header_desktop" ref={ref} className={headerClassName}>
-      <div className="max-w-[1024px] mx-auto px-2 xl:px-0 flex items-center py-5 ">
+      <div className={headerContentClassName}>
         <Logo />
         <div className="flex ml-4 xl:ml-10 space-x-2 semi-md:space-x-4 lg:space-x-8 items-center mr-1">
           {links.map((link) => (
