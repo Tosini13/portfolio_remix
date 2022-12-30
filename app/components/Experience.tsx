@@ -34,7 +34,7 @@ const Experience: React.FC<ExperienceProps> = ({
         alt={`${title} logo`}
       />
       <div className="space-y-2">
-        <h4 className="text-xl font-medium">{title}</h4>
+        <h3 className="text-xl font-medium">{title}</h3>
         <Paragraph className="flex items-center font-normal text-tertiary">
           {`${startDate.toLocaleString("default", {
             month: "long",
