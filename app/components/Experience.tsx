@@ -26,9 +26,12 @@ const Experience: React.FC<ExperienceProps> = ({
   technologies,
 }) => {
   return (
-    <div data-testId="experience" className="relative">
+    <div
+      data-testId="experience"
+      className="relative rounded-lg group hover:shadow-[0px_5px_30px_rgba(0,_0,_0,_0.08)] p-10 pb-4 transition-all duration-300"
+    >
       <img
-        className="absolute -top-10 -left-10 opacity-10 grayscale h-[80px]"
+        className="absolute top-2 left-2 opacity-10 grayscale group-hover:grayscale-0 group-hover:opacity-20 transition-all duration-300 h-[80px]"
         src={iconSrc}
         height={200}
         alt={`${title} logo`}
@@ -61,7 +64,8 @@ const Experience: React.FC<ExperienceProps> = ({
           {technologies.map((technology) => (
             <div
               key={technology.id}
-              className="ml-1 mt-1 rounded-full text-extra py-1.5 px-3 font-medium whitespace-nowrap"
+              className="ml-1 mt-1 rounded-full text-extra py-1.5 px-3 font-medium whitespace-nowrap
+              group-hover:bg-extra group-hover:text-secondary transition-all duration-600 "
             >
               {technology.name}
             </div>

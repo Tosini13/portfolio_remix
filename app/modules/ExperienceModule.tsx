@@ -221,7 +221,7 @@ const ExperienceModule: React.FC<ExperienceModuleProps> = () => {
         <Heading className="md:mx-auto flex items-center mb-20">
           Experience <img width={40} height={40} src={ok} alt="ok hand" />{" "}
         </Heading>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-20 max-w-[1024px] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-8 max-w-[1024px] mx-auto">
           {experience.map((exp) => (
             <div
               key={exp.id}
