@@ -44,6 +44,7 @@ const projects: Array<ProjectType> = [
     ],
     desktopSrc: `${PROJECTS_IMG_PATH}/champions_youth.desktop.png`,
     mobileSrc: `${PROJECTS_IMG_PATH}/champions_youth.mobile.png`,
+    url: "https://champions-youth.web.app/tournament/4vJ7qWUJfOFTFJznyVvu",
   },
   {
     id: "2",
@@ -74,6 +75,7 @@ const projects: Array<ProjectType> = [
     ],
     desktopSrc: `${PROJECTS_IMG_PATH}/nutricionez.desktop.png`,
     mobileSrc: `${PROJECTS_IMG_PATH}/nutricionez.mobile.png`,
+    url: "https://nutricionez.com/",
   },
 ];
 
