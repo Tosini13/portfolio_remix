@@ -24,7 +24,7 @@ type StoryModuleProps = {};
 const StoryModule: React.FC<StoryModuleProps> = ({}) => {
   return (
     <Section
-      data-test-id="story_module"
+      data-testId="story_module"
       id="story"
       className="max-w-[1024px] lg:mx-auto flex flex-col md:flex-row space-y-8 md:space-y-0 space-x-0 md:space-x-8 items-center justify-between"
     >

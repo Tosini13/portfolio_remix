@@ -39,7 +39,7 @@ type HeaderModuleProps = {};
 const HeaderModule: React.FC<HeaderModuleProps> = () => {
   return (
     <header
-      data-test-id="header_module"
+      data-testId="header_module"
       className="w-full sticky top-0 left-0 z-50"
     >
       <div className="hidden md:block">

@@ -14,7 +14,7 @@ const experience: Array<ExperienceType> = [
     startDate: new Date("10-01-2016"),
     endDate: new Date("09-30-2019"),
     technologies: [],
-    iconSrc: `${LOGOS_IMG_PATH}/zut_logo.png`,
+    iconSrc: `${LOGOS_IMG_PATH}/zut.logo.png`,
   },
   {
     id: "2",
@@ -34,7 +34,7 @@ const experience: Array<ExperienceType> = [
     location: "Larnaca, Cyprus",
     startDate: new Date("06-01-2019"),
     endDate: new Date("07-30-2019"),
-    iconSrc: `${LOGOS_IMG_PATH}/dorea_logo.png`,
+    iconSrc: `${LOGOS_IMG_PATH}/dorea.logo.png`,
     technologies: [
       {
         id: "1",
@@ -62,7 +62,7 @@ const experience: Array<ExperienceType> = [
     location: "Warsaw, Poland (Remotely)",
     startDate: new Date("06-01-2020"),
     endDate: new Date("07-30-2020"),
-    iconSrc: `${LOGOS_IMG_PATH}/mayeryn_logo.png`,
+    iconSrc: `${LOGOS_IMG_PATH}/mayeryn.logo.png`,
     technologies: [
       {
         id: "1",
@@ -94,7 +94,7 @@ const experience: Array<ExperienceType> = [
     location: "Szczecin, Poland",
     startDate: new Date("07-01-2020"),
     endDate: new Date("09-30-2021"),
-    iconSrc: `${LOGOS_IMG_PATH}/apptimia_logo.png`,
+    iconSrc: `${LOGOS_IMG_PATH}/apptimia.logo.png`,
     technologies: [
       {
         id: "1",
@@ -146,7 +146,7 @@ const experience: Array<ExperienceType> = [
     location: "Barcelona, Spain",
     startDate: new Date("01-01-2022"),
     endDate: new Date("12-30-2022"),
-    iconSrc: `${LOGOS_IMG_PATH}/brainly_logo.png`,
+    iconSrc: `${LOGOS_IMG_PATH}/brainly.logo.png`,
     technologies: [
       {
         id: "1",
@@ -213,7 +213,7 @@ type ExperienceModuleProps = {};
 const ExperienceModule: React.FC<ExperienceModuleProps> = () => {
   return (
     <Section
-      data-test-id="experience_module"
+      data-testId="experience_module"
       id="experience"
       className="relative"
     >

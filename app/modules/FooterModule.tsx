@@ -12,7 +12,7 @@ type FooterModuleProps = {};
 
 const FooterModule: React.FC<FooterModuleProps> = () => {
   return (
-    <section data-test-id="footer_module" className="bg-primary text-xs">
+    <section data-testId="footer_module" className="bg-primary text-xs">
       <div className="relative p-10 overflow-hidden">
         <img
           className="absolute grayscale top-1/2 left-0 -translate-y-1/2 -translate-x-1/3 opacity-5"

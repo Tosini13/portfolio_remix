@@ -21,7 +21,7 @@ type ContactModuleProps = {};
 
 const ContactModule: React.FC<ContactModuleProps> = ({}) => {
   return (
-    <Section data-test-id="contact_module" id="contact" className="space-y-10">
+    <Section data-testId="contact_module" id="contact" className="space-y-10">
       <Heading className="md:mx-auto flex items-center">
         Contact{" "}
         <img

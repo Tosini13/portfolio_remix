@@ -8,7 +8,7 @@ type TestimonialsModuleProps = {};
 const TestimonialsModule: React.FC<TestimonialsModuleProps> = () => {
   return (
     <Section
-      data-test-id="testimonials_module"
+      data-testId="testimonials_module"
       id="testimonials"
       className="max-w-[1024px] space-y-10 md:space-y-6"
     >

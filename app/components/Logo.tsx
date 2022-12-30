@@ -24,7 +24,7 @@ const Logo: React.FC<LogoProps> = ({ secondary }) => {
     [secondary]
   );
   return (
-    <div data-test-id="logo" className="flex items-center">
+    <div data-testId="logo" className="flex items-center">
       <img src={secondary ? SECONDARY_LOGO : LOGO_ICON} alt="logo" />
       <h1 className={className}>Jakub Bartosik</h1>
     </div>

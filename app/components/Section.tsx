@@ -15,7 +15,7 @@ const Section: React.FC<SectionProps> = ({
     [customClassName]
   );
 
-  return <section data-test-id="section" className={className} {...props} />;
+  return <section data-testId="section" className={className} {...props} />;
 };
 
 export default Section;

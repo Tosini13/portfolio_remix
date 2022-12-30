@@ -41,7 +41,7 @@ const HeaderDesktop: React.FC<HeaderDesktopProps> = ({ links }) => {
   );
 
   return (
-    <div data-test-id="header_desktop" ref={ref} className={headerClassName}>
+    <div data-testId="header_desktop" ref={ref} className={headerClassName}>
       <div className="max-w-[1024px] mx-auto px-2 xl:px-0 flex items-center py-5 ">
         <Logo />
         <div className="flex ml-4 xl:ml-10 space-x-2 semi-md:space-x-4 lg:space-x-8 items-center mr-1">

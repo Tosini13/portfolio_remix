@@ -81,11 +81,7 @@ type ProjectsModuleProps = {};
 
 const ProjectsModule: React.FC<ProjectsModuleProps> = () => {
   return (
-    <Section
-      data-test-id="projects_module"
-      id="projects"
-      className="space-y-14"
-    >
+    <Section data-testId="projects_module" id="projects" className="space-y-14">
       <Heading className="md:mx-auto after:w-full flex items-center">
         My projects{" "}
         <img width={40} height={40} src={writing} alt="writing hand" />{" "}

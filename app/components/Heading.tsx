@@ -13,7 +13,7 @@ const Heading: React.FC<React.HTMLAttributes<HTMLHeadingElement>> = ({
     [customClassName]
   );
 
-  return <h1 data-test-id="heading" className={className} {...props} />;
+  return <h1 data-testId="heading" className={className} {...props} />;
 };
 
 export default Heading;

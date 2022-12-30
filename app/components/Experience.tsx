@@ -26,7 +26,7 @@ const Experience: React.FC<ExperienceProps> = ({
   technologies,
 }) => {
   return (
-    <div data-test-id="experience" className="relative">
+    <div data-testId="experience" className="relative">
       <img
         className="absolute -top-10 -left-10 opacity-10 grayscale h-[80px]"
         src={iconSrc}

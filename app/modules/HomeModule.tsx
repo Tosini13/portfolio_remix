@@ -2,12 +2,12 @@ import Button, { ButtonLink } from "~/components/Button";
 import wave from "../../public/img/icons/wave.svg";
 import profilePhoto from "../../public/img/photos/jb_photo.png";
 import logo from "../../public/img/logos/logo.svg";
-import zutLogo from "../../public/img/logos/zut_logo.png";
+import zutLogo from "../../public/img/logos/zut.logo.png";
 import paCollegeLogo from "../../public/img/logos/paCollege_logo.png";
-import doreaLogo from "../../public/img/logos/dorea_logo.png";
-import mayerynLogo from "../../public/img/logos/mayeryn_logo.png";
-import apptimiaLogo from "../../public/img/logos/apptimia_logo.png";
-import brainlyLogo from "../../public/img/logos/brainly_logo.png";
+import doreaLogo from "../../public/img/logos/dorea.logo.png";
+import mayerynLogo from "../../public/img/logos/mayeryn.logo.png";
+import apptimiaLogo from "../../public/img/logos/apptimia.logo.png";
+import brainlyLogo from "../../public/img/logos/brainly.logo.png";
 import Paragraph from "~/components/Paragraph";
 import { MEDIA_LINKS } from "~/utils/media";
 import Slider from "~/components/Slider";
@@ -57,7 +57,7 @@ type HomeModuleProps = {};
 const HomeModule: React.FC<HomeModuleProps> = () => {
   return (
     <Section
-      data-test-id="home_module"
+      data-testId="home_module"
       id="home"
       className="max-w-[1024px] mx-auto space-y-12 -mt-12"
     >

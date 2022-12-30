@@ -12,7 +12,7 @@ const Paragraph: React.FC<React.HTMLAttributes<HTMLParagraphElement>> = ({
     [customClassName]
   );
 
-  return <p data-test-id="paragraph" {...props} className={className} />;
+  return <p data-testId="paragraph" {...props} className={className} />;
 };
 
 export default Paragraph;

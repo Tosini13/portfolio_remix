@@ -8,7 +8,7 @@ type ProjectsEncourageProps = {};
 const ProjectsEncourage: React.FC<ProjectsEncourageProps> = ({}) => {
   return (
     <div
-      data-test-id="projects_encourage"
+      data-testId="projects_encourage"
       className="relative bg-primary text-secondary py-10 rounded-2xl overflow-hidden"
     >
       <img

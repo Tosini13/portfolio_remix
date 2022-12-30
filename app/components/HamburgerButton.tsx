@@ -26,7 +26,7 @@ const HamburgerButton: React.FC<THamburgerButtonProps> = ({
 
   return (
     <div
-      data-testid="hamburger-button"
+      data-testId="hamburger-button"
       onClick={onClick}
       className="w-[25px] cursor-pointer space-y-1 no-focus"
     >

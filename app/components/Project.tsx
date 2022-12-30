@@ -26,7 +26,7 @@ const Project: React.FC<ProjectProps> = ({
 }) => {
   return (
     <div
-      data-test-id="project"
+      data-testId="project"
       className="relative rounded-3xl border-2 border-[#E8E8E8] overflow-hidden
       before:content-['</>'] before:absolute before:text-tertiary before:font-bold before:text-9xl before:-bottom-10 before:-right-10 before:opacity-5
       "

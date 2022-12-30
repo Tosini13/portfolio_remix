@@ -708,6 +708,10 @@ video {
   max-height: 71px;
 }
 
+.max-h-20 {
+  max-height: 5rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -731,6 +735,10 @@ video {
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.w-\[200\%\] {
+  width: 200%;
 }
 
 .min-w-\[200\%\] {
@@ -1649,10 +1657,6 @@ video {
 
   .md\:hidden {
     display: none;
-  }
-
-  .md\:w-auto {
-    width: auto;
   }
 
   .md\:w-fit {

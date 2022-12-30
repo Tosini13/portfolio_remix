@@ -47,7 +47,7 @@ const HeaderMobile: React.FC<HeaderMobileProps> = ({ links }) => {
   );
 
   return (
-    <div ref={ref} data-test-id="header_mobile" className={headerClassName}>
+    <div ref={ref} data-testId="header_mobile" className={headerClassName}>
       <img
         className="absolute invert -rotate-12 grayscale -top-20 -left-20 opacity-5"
         width={300}
