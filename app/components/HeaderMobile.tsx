@@ -7,7 +7,7 @@ import Logo from "./Logo";
 import logo from "../../public/img/logos/logo.svg";
 
 const headerThemeClassName =
-  "relative px-4 py-4 bg-primary transition-shadow transition-[min-height] transition-[max-height] duration-150 ease-out overflow-hidden";
+  "relative px-4 py-4 bg-primary transition-shadow duration-150 ease-out overflow-hidden";
 
 type HeaderMobileProps = {
   links: Array<TLinkType>;
