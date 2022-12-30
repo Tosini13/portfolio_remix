@@ -80,6 +80,10 @@ const experience: Array<ExperienceType> = [
         id: "4",
         name: "JavaScript",
       },
+      {
+        id: "5",
+        name: "PHP",
+      },
     ],
   },
   {
@@ -101,6 +105,14 @@ const experience: Array<ExperienceType> = [
         name: "CSS 3",
       },
       {
+        id: "3.1",
+        name: "TypeScript",
+      },
+      {
+        id: "3.2",
+        name: "Next.js",
+      },
+      {
         id: "2.2",
         name: "Material UI",
       },
@@ -115,6 +127,14 @@ const experience: Array<ExperienceType> = [
       {
         id: "4",
         name: "GraphQL",
+      },
+      {
+        id: "5",
+        name: "Jest",
+      },
+      {
+        id: "5.1",
+        name: "Cypress",
       },
     ],
   },
@@ -146,7 +166,15 @@ const experience: Array<ExperienceType> = [
       },
       {
         id: "4",
-        name: "React",
+        name: "React.js",
+      },
+      {
+        id: "4.11",
+        name: "Next.js",
+      },
+      {
+        id: "4.12",
+        name: "NX",
       },
       {
         id: "4.1",
@@ -158,7 +186,7 @@ const experience: Array<ExperienceType> = [
       },
       {
         id: "4.3",
-        name: "JScodeShift",
+        name: "jscodeshift",
       },
       {
         id: "5",
@@ -171,6 +199,10 @@ const experience: Array<ExperienceType> = [
       {
         id: "5.1",
         name: "Cucumber",
+      },
+      {
+        id: "6",
+        name: "Apollo",
       },
     ],
   },

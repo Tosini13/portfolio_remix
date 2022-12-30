@@ -91,12 +91,9 @@ const ProjectsModule: React.FC<ProjectsModuleProps> = () => {
         <img width={40} height={40} src={writing} alt="writing hand" />{" "}
       </Heading>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-14 max-w-[1024px] mx-auto">
-        {Array(2)
-          .fill(projects)
-          .flat()
-          .map((project) => (
-            <Project key={project.id} {...project} />
-          ))}
+        {projects.map((project) => (
+          <Project key={project.id} {...project} />
+        ))}
       </div>
       <ProjectsEncourage />
     </Section>

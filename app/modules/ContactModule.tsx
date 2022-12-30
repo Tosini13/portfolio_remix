@@ -2,9 +2,9 @@ import call from "../../public/img/icons/call.svg";
 import telephone from "../../public/img/icons/telephone.svg";
 import mail from "../../public/img/icons/mail.svg";
 import Heading from "~/components/Heading";
-import Button, { ButtonLink } from "~/components/Button";
+import { ButtonLink } from "~/components/Button";
 import Paragraph from "~/components/Paragraph";
-import { MEDIA_LINKS } from "~/utils/media";
+import { EMAIL_ADDRESS, MEDIA_LINKS, PHONE_NUMBER } from "~/utils/media";
 import Section from "~/components/Section";
 
 const classNames = {
@@ -16,7 +16,6 @@ const MEDIA_BUTTONS_TEXT = new Map();
 MEDIA_BUTTONS_TEXT.set("github", "Check my Github");
 MEDIA_BUTTONS_TEXT.set("linkedIn", "Find me on LinkedIn");
 MEDIA_BUTTONS_TEXT.set("insta", "Don't forget about my IG");
-MEDIA_BUTTONS_TEXT.set("fb", "Here is my FB");
 
 type ContactModuleProps = {};
 
@@ -36,44 +35,63 @@ const ContactModule: React.FC<ContactModuleProps> = ({}) => {
       <div className={classNames.sections}>
         <h5 className={classNames.headings}>Do you want to meet?</h5>
         <div className="flex flex-col md:flex-row items-start space-x-0 md:space-x-2 space-y-2 md:space-y-0">
-          <Button>Let's set up a call</Button>
-          <Button secondary>Let's text</Button>
+          <ButtonLink href={"https://meet.google.com/"} target={"_blank"}>
+            Let's set up a call
+          </ButtonLink>
+          <ButtonLink
+            className="ml-auto"
+            href={`https://wa.me/${PHONE_NUMBER}`}
+            target={"_blank"}
+            rel="noreferrer"
+            secondary
+          >
+            Let's text
+          </ButtonLink>
         </div>
       </div>
       <div className={classNames.sections}>
         <h5 className={classNames.headings}>Email & phone number</h5>
         <div className="flex flex-wrap">
-          <Paragraph className="flex items-center whitespace-nowrap mr-4 mb-2">
-            <img
-              className="mr-2"
-              height={20}
-              width={20}
-              src={mail}
-              alt="e-mail icon"
-            />
-            <address className="underline">jbartos13@gmail.com</address>
-          </Paragraph>
-          <Paragraph className="flex items-center whitespace-nowrap mr-4 mb-2">
-            <img
-              className="mr-2"
-              height={20}
-              width={20}
-              src={telephone}
-              alt="e-mail icon"
-            />
-            <span className="underline">+48 696 993 916</span>
-          </Paragraph>
+          <a href={`mailto:${EMAIL_ADDRESS}`}>
+            <Paragraph className="flex items-center whitespace-nowrap mr-4 mb-2">
+              <img
+                className="mr-2"
+                height={20}
+                width={20}
+                src={mail}
+                alt="e-mail icon"
+              />
+              <address className="underline">jbartos13@gmail.com</address>
+            </Paragraph>
+          </a>
+          <a
+            href={`https://wa.me/${PHONE_NUMBER}`}
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            <Paragraph className="flex items-center whitespace-nowrap mr-4 mb-2">
+              <img
+                className="mr-2"
+                height={20}
+                width={20}
+                src={telephone}
+                alt="e-mail icon"
+              />
+              <span className="underline">+48 696 993 916</span>
+            </Paragraph>
+          </a>
         </div>
       </div>
       <div className={classNames.sections}>
         <h5 className={classNames.headings}>Social media</h5>
         <div className="flex flex-wrap">
           {MEDIA_LINKS.filter((link) =>
-            ["github", "linkedIn", "insta", "fb"].includes(link.id)
+            ["github", "linkedIn", "insta"].includes(link.id)
           ).map((link) => (
             <ButtonLink
               className="flex items-center mr-2 mb-2"
               href={link.href}
+              target="_blank"
             >
               <img
                 className="mr-2"

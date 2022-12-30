@@ -1,7 +1,8 @@
 import React from "react";
 import { twMerge } from "tailwind-merge";
 import { TLinkType } from "~/modules/HeaderModule";
-import Button from "./Button";
+import { PHONE_NUMBER } from "~/utils/media";
+import { ButtonLink } from "./Button";
 import Link from "./Link";
 import Logo from "./Logo";
 
@@ -52,7 +53,14 @@ const HeaderDesktop: React.FC<HeaderDesktopProps> = ({ links }) => {
             />
           ))}
         </div>
-        <Button className="ml-auto">Let's meet</Button>
+        <ButtonLink
+          className="ml-auto"
+          href={`https://wa.me/${PHONE_NUMBER}`}
+          target={"_blank"}
+          rel="noreferrer"
+        >
+          Let's meet
+        </ButtonLink>
       </div>
     </div>
   );

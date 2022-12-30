@@ -3,8 +3,10 @@ import Link from "~/components/Link";
 import Logo from "~/components/Logo";
 import Paragraph from "~/components/Paragraph";
 import { links } from "./HeaderModule";
-import { MEDIA_LINKS } from "~/utils/media";
-import { ButtonLink } from "~/components/Button";
+import { EMAIL_ADDRESS, MEDIA_LINKS, PHONE_NUMBER } from "~/utils/media";
+import Button, { ButtonLink } from "~/components/Button";
+
+const ICONS_IMG_PATH = "/img/icons";
 
 type FooterModuleProps = {};
 
@@ -40,7 +42,12 @@ const FooterModule: React.FC<FooterModuleProps> = () => {
           </div>
           <div className="mb-2 sm:flex items-center space-x-1 flex-wrap hidden">
             {MEDIA_LINKS.map((link) => (
-              <ButtonLink className="px-3" key={link.id} href={link.href}>
+              <ButtonLink
+                className="px-3"
+                key={link.id}
+                href={link.href}
+                target="_blank"
+              >
                 <img
                   height={20}
                   width={20}
@@ -49,6 +56,27 @@ const FooterModule: React.FC<FooterModuleProps> = () => {
                 />
               </ButtonLink>
             ))}
+            <ButtonLink className="px-3" href={`mailto:${EMAIL_ADDRESS}`}>
+              <img
+                height={20}
+                width={20}
+                src={`${ICONS_IMG_PATH}/mail.secondary.icon.svg`}
+                alt={"mail icon"}
+              />
+            </ButtonLink>
+            <ButtonLink
+              className="px-3"
+              href={`https://wa.me/${PHONE_NUMBER}`}
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              <img
+                height={20}
+                width={20}
+                src={`${ICONS_IMG_PATH}/telephone.secondary.icon.svg`}
+                alt={"phone icon"}
+              />
+            </ButtonLink>
           </div>
         </div>
       </div>

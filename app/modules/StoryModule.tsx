@@ -1,9 +1,10 @@
-import Button from "~/components/Button";
+import { ButtonLink } from "~/components/Button";
 import Heading from "~/components/Heading";
 import profilePhoto from "../../public/img/photos/jb_sea_photo.png";
 import depuytren from "../../public/img/icons/depuytren.svg";
 import Paragraph from "~/components/Paragraph";
 import Section from "~/components/Section";
+import { PHONE_NUMBER } from "~/utils/media";
 
 const heading = (
   <Heading className="flex items-center">
@@ -41,7 +42,14 @@ const StoryModule: React.FC<StoryModuleProps> = ({}) => {
           problems.
         </Paragraph>
         <div className="text-center md:text-left">
-          <Button>Let's meet</Button>
+          <ButtonLink
+            className="ml-auto"
+            href={`https://wa.me/${PHONE_NUMBER}`}
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            Let's meet
+          </ButtonLink>
         </div>
       </div>
       <div
