@@ -11,7 +11,7 @@ export default function Index() {
   return (
     <div>
       <HeaderModule />
-      <main className="space-y-[150px] max-w-[1024px] mx-auto mb-20">
+      <main className="space-y-[25px] max-w-[1024px] mx-auto mb-20">
         <HomeModule />
         <StoryModule />
         <TestimonialsModule />

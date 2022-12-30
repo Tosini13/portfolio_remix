@@ -11,8 +11,8 @@ const Slider: React.FC<SliderProps> = ({ items }) => {
   return (
     <div data-test-id="slider" className="relative overflow-hidden">
       <div className="flex items-center justify-center">
-        <div className="w-[200%] h-20 overflow-hidden relative">
-          <div className="w-[200%] flex items-center h-20 justify-around absolute left-0 animate-banner-scroll gap-1 animate">
+        <div className="min-w-[200%] h-20 overflow-hidden relative">
+          <div className="min-w-[200%] flex items-center h-20 justify-around absolute left-0 animate-banner-scroll gap-x-3 md:gap-x-1 animate">
             <SliderItems items={items} />
             <SliderItems items={items} />
           </div>
