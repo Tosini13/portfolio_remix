@@ -1572,6 +1572,15 @@ video {
     border-width: 0px;
   }
 
+  .hover\:border-transparent:hover {
+    border-color: transparent;
+  }
+
+  .hover\:border-extra:hover {
+    --tw-border-opacity: 1;
+    border-color: rgb(45 149 245 / var(--tw-border-opacity));
+  }
+
   .hover\:bg-primary-light:hover {
     --tw-bg-opacity: 1;
     background-color: rgb(52 52 83 / var(--tw-bg-opacity));

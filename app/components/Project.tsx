@@ -27,9 +27,9 @@ const Project: React.FC<ProjectProps> = ({
   return (
     <div
       data-testId="project"
-      className="group relative rounded-3xl border-2 border-[#E8E8E8] overflow-hidden px-0
+      className="group relative rounded-3xl border-2 border-[#E8E8E8] overflow-hidden
       before:content-['</>'] before:absolute before:text-tertiary before:font-bold before:text-9xl before:-bottom-10 before:-right-10 before:opacity-5
-      transition-all duration-300 hover:bg-extra hover:shadow-md hover:border-0 hover:px-1 hover:text-secondary cursor-pointer
+      transition-all duration-300 hover:bg-extra hover:shadow-md hover:border-extra hover:text-secondary cursor-pointer
       "
     >
       <img
