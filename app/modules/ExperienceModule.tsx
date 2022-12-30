@@ -2,7 +2,6 @@ import Experience, { ExperienceType } from "~/components/Experience";
 import Heading from "~/components/Heading";
 import Section from "~/components/Section";
 import ok from "../../public/img/icons/ok.svg";
-import steps from "../../public/img/photos/steps.svg";
 
 const LOGOS_IMG_PATH = "/img/logos";
 
@@ -186,14 +185,6 @@ const ExperienceModule: React.FC<ExperienceModuleProps> = () => {
       id="experience"
       className="relative"
     >
-      {/**
-       * @todo add the img to background with repeat in whole height
-       */}
-      <img
-        className="absolute top-0 left-1/2 -translate-x-1/2"
-        src={steps}
-        alt="steps"
-      />
       <div className="relative space-y-10">
         <Heading className="md:mx-auto flex items-center mb-20">
           Experience <img width={40} height={40} src={ok} alt="ok hand" />{" "}
