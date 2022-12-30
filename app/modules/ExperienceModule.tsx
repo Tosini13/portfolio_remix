@@ -222,7 +222,7 @@ const ExperienceModule: React.FC<ExperienceModuleProps> = () => {
           Experience <img width={40} height={40} src={ok} alt="ok hand" />{" "}
         </Heading>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-8 max-w-[1024px] mx-auto">
-          {experience.map((exp) => (
+          {experience.reverse().map((exp) => (
             <div
               key={exp.id}
               className="bg-secondary shadow-[0px_0px_30px_0px_white]"
