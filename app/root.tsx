@@ -24,6 +24,7 @@ export const meta: MetaFunction = () => ({
   charset: "utf-8",
   title: "Jakub Bartosik - Portfolio",
   viewport: "width=device-width,initial-scale=1",
+  description: "Let's improve world together with web projects!",
 });
 
 export default function App() {
