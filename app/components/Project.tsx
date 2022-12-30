@@ -61,7 +61,7 @@ const Project: React.FC<ProjectProps> = ({
               <div
                 key={technology.id}
                 className="ml-1 mt-1 rounded-full bg-tertiary text-secondary py-1.5 px-3 font-medium whitespace-nowrap
-              group-hover:text-extra group-hover:bg-secondary transition-all duration-300"
+              group-hover:text-extra group-hover:bg-secondary transition-all duration-300  hover-none:bg-extra hover-none:text-secondary"
               >
                 {technology.name}
               </div>

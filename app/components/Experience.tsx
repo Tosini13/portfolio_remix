@@ -64,8 +64,8 @@ const Experience: React.FC<ExperienceProps> = ({
           {technologies.map((technology) => (
             <div
               key={technology.id}
-              className="ml-1 mt-1 rounded-full text-extra py-1.5 px-3 font-medium whitespace-nowrap
-              group-hover:bg-extra group-hover:text-secondary transition-all duration-600 "
+              className="ml-1 mt-1 rounded-full md:bg-secondary md:text-extra py-1.5 px-3 font-medium whitespace-nowrap
+              group-hover:bg-extra group-hover:text-secondary transition-all duration-600 hover-none:bg-extra hover-none:text-secondary"
             >
               {technology.name}
             </div>
