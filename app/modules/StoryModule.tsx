@@ -1,6 +1,6 @@
 import { ButtonLink } from "~/components/Button";
 import Heading from "~/components/Heading";
-import profilePhoto from "../../public/img/photos/jb_sea_photo.png";
+import profilePhoto from "../../public/img/photos/jb.sea.photo.png";
 import depuytren from "../../public/img/icons/depuytren.svg";
 import Paragraph from "~/components/Paragraph";
 import Section from "~/components/Section";
@@ -52,13 +52,8 @@ const StoryModule: React.FC<StoryModuleProps> = ({}) => {
           </ButtonLink>
         </div>
       </div>
-      <div
-        className="h-fit w-fit p-3 relative min-w-[250px] order-2 md:order-4
-       before:block before:absolute before:top-0 before:left-0 before:h-16 before:w-16 before:border-solid before:border-4 before:border-b-0 before:border-r-0 before:border-extra
-       after:block after:absolute after:bottom-0 after:right-0 after:h-16 after:w-16 after:border-solid after:border-4 after:border-t-0 after:border-l-0 after:border-extra
-      "
-      >
-        <img className="grayscale" src={profilePhoto} alt="photo about me" />
+      <div className="h-fit w-fit p-3 relative min-w-[250px] order-2 md:order-4">
+        <img src={profilePhoto} alt="photo about me" />
       </div>
     </Section>
   );

@@ -1,9 +1,9 @@
 import Button, { ButtonLink } from "~/components/Button";
 import wave from "../../public/img/icons/wave.svg";
-import profilePhoto from "../../public/img/photos/jb_photo.png";
+import profilePhoto from "../../public/img/photos/jb.photo.png";
 import logo from "../../public/img/logos/logo.svg";
 import zutLogo from "../../public/img/logos/zut.logo.png";
-import paCollegeLogo from "../../public/img/logos/paCollege_logo.png";
+import paCollegeLogo from "../../public/img/logos/paCollege.logo.png";
 import doreaLogo from "../../public/img/logos/dorea.logo.png";
 import mayerynLogo from "../../public/img/logos/mayeryn.logo.png";
 import apptimiaLogo from "../../public/img/logos/apptimia.logo.png";

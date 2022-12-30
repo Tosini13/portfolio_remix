@@ -24,7 +24,7 @@ const experience: Array<ExperienceType> = [
     startDate: new Date("10-01-2018"),
     endDate: new Date("05-20-2019"),
     technologies: [],
-    iconSrc: `${LOGOS_IMG_PATH}/paCollege_logo.png`,
+    iconSrc: `${LOGOS_IMG_PATH}/paCollege.logo.png`,
   },
   {
     id: "3",
