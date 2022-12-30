@@ -4,31 +4,19 @@ export const MEDIA_LINKS = [
     {
       id: "github",
       iconSrc: `${ICONS_IMG_PATH}/github.svg`,
-      href: "#",
+      href: "https://github.com/Tosini13/portfolio_remix",
     },
     {
       id: "linkedIn",
       iconSrc: `${ICONS_IMG_PATH}/linkedIn.svg`,
-      href: "#",
-    },
-    {
-      id: "fb",
-      iconSrc: `${ICONS_IMG_PATH}/facebook.svg`,
-      href: "#",
+      href: "https://www.linkedin.com/in/jakub-bartosik-developer/",
     },
     {
       id: "insta",
       iconSrc: `${ICONS_IMG_PATH}/instagram.svg`,
-      href: "#",
-    },
-    {
-      id: "mail",
-      iconSrc: `${ICONS_IMG_PATH}/mail.secondary.icon.svg`,
-      href: "#",
-    },
-    {
-      id: "phone",
-      iconSrc: `${ICONS_IMG_PATH}/telephone.secondary.icon.svg`,
-      href: "#",
+      href: "https://instagram.com/ydkwebdevy?igshid=ZDdkNTZiNTM=",
     },
   ];
+
+  export const EMAIL_ADDRESS = 'jbartos13@gmail.com';
+  export const PHONE_NUMBER = '48696993916';

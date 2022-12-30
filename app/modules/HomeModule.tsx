@@ -88,14 +88,22 @@ const HomeModule: React.FC<HomeModuleProps> = () => {
             <br />
             and hyperfriendly <span className="font-semibold">co-worker</span>?
           </Paragraph>
-          <Button className="bg-extra hover:bg-extra-light w-full md:w-auto">
+          <ButtonLink
+            href="#experience"
+            className="block bg-extra hover:bg-extra-light w-full md:w-fit text-center"
+          >
             Check my skills & experience
-          </Button>
+          </ButtonLink>
           <div className="flex flex-wrap items-center space-x-2 justify-center md:justify-start">
             {MEDIA_LINKS.filter((link) =>
-              ["github", "linkedIn", "insta", "fb"].includes(link.id)
+              ["github", "linkedIn", "insta"].includes(link.id)
             ).map((link) => (
-              <ButtonLink className="px-3" key={link.id} href={link.href}>
+              <ButtonLink
+                className="px-3"
+                key={link.id}
+                href={link.href}
+                target="_blank"
+              >
                 <img
                   height={20}
                   width={20}

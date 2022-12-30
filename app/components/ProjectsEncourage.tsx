@@ -1,6 +1,7 @@
-import Button from "./Button";
+import { ButtonLink } from "./Button";
 import Paragraph from "./Paragraph";
 import logo from "../../public/img/logos/logo.svg";
+import { PHONE_NUMBER } from "~/utils/media";
 
 type ProjectsEncourageProps = {};
 
@@ -31,7 +32,15 @@ const ProjectsEncourage: React.FC<ProjectsEncourageProps> = ({}) => {
           <br />
           website and make business growing.
         </Paragraph>
-        <Button secondary>Let's work together</Button>
+
+        <ButtonLink
+          href={`https://wa.me/${PHONE_NUMBER}`}
+          target={"_blank"}
+          rel="noreferrer"
+          secondary
+        >
+          Let's work together
+        </ButtonLink>
       </div>
     </div>
   );

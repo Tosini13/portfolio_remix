@@ -28,7 +28,7 @@ const Button: React.FC<ButtonProps> = ({
 
 export default Button;
 
-type ButtonLinkProps = React.LinkHTMLAttributes<HTMLAnchorElement> & {
+type ButtonLinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
   secondary?: boolean;
 };
 export const ButtonLink: React.FC<ButtonLinkProps> = ({

@@ -37,17 +37,5 @@ function getSocialMedia() {
       icon: `instagram.svg`,
       url: "#",
     },
-    {
-      id: "mail",
-      name: "mail",
-      icon: `mail.secondary.icon.svg`,
-      url: "#",
-    },
-    {
-      id: "phone",
-      name: "phone",
-      icon: `telephone.secondary.icon.svg`,
-      url: "#",
-    },
   ];
 }
