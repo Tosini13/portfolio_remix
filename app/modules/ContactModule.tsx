@@ -6,6 +6,7 @@ import { ButtonLink } from "~/components/Button";
 import Paragraph from "~/components/Paragraph";
 import { EMAIL_ADDRESS, MEDIA_LINKS, PHONE_NUMBER } from "~/utils/media";
 import Section from "~/components/Section";
+import { useCopy } from "~/utils/useCopy";
 
 const classNames = {
   headings: "uppercase text-sm text-tertiary font-semibold",
@@ -20,6 +21,9 @@ MEDIA_BUTTONS_TEXT.set("insta", "Don't forget about my IG");
 type ContactModuleProps = {};
 
 const ContactModule: React.FC<ContactModuleProps> = ({}) => {
+  const { handleCopy: handleCopyEmail } = useCopy(EMAIL_ADDRESS);
+  const { handleCopy: handleCopyPhone } = useCopy(PHONE_NUMBER);
+
   return (
     <Section data-testId="contact_module" id="contact" className="space-y-10">
       <Heading className="md:mx-auto flex items-center">
@@ -52,34 +56,32 @@ const ContactModule: React.FC<ContactModuleProps> = ({}) => {
       <div className={classNames.sections}>
         <h5 className={classNames.headings}>Email & phone number</h5>
         <div className="flex flex-wrap">
-          <a href={`mailto:${EMAIL_ADDRESS}`}>
-            <Paragraph className="flex items-center whitespace-nowrap mr-4 mb-2">
-              <img
-                className="mr-2"
-                height={20}
-                width={20}
-                src={mail}
-                alt="e-mail icon"
-              />
-              <address className="underline">jbartos13@gmail.com</address>
-            </Paragraph>
-          </a>
-          <a
-            href={`https://wa.me/${PHONE_NUMBER}`}
-            target={"_blank"}
-            rel="noreferrer"
+          <Paragraph
+            className="flex items-center whitespace-nowrap mr-4 mb-2"
+            onClick={handleCopyEmail}
           >
-            <Paragraph className="flex items-center whitespace-nowrap mr-4 mb-2">
-              <img
-                className="mr-2"
-                height={20}
-                width={20}
-                src={telephone}
-                alt="e-mail icon"
-              />
-              <span className="underline">+48 696 993 916</span>
-            </Paragraph>
-          </a>
+            <img
+              className="mr-2"
+              height={20}
+              width={20}
+              src={mail}
+              alt="e-mail icon"
+            />
+            <address className="underline">{EMAIL_ADDRESS}</address>
+          </Paragraph>
+          <Paragraph
+            className="flex items-center whitespace-nowrap mr-4 mb-2 cursor-pointer"
+            onClick={handleCopyPhone}
+          >
+            <img
+              className="mr-2"
+              height={20}
+              width={20}
+              src={telephone}
+              alt="e-mail icon"
+            />
+            <span className="underline">{PHONE_NUMBER}</span>
+          </Paragraph>
         </div>
       </div>
       <div className={classNames.sections}>
