@@ -6,6 +6,7 @@ import { ButtonLink } from "~/components/Button";
 import Paragraph from "~/components/Paragraph";
 import { EMAIL_ADDRESS, MEDIA_LINKS, PHONE_NUMBER } from "~/utils/media";
 import Section from "~/components/Section";
+import Popup from "~/components/Popup";
 
 const classNames = {
   headings: "uppercase text-sm text-tertiary font-semibold",
@@ -64,12 +65,8 @@ const ContactModule: React.FC<ContactModuleProps> = ({}) => {
               <address className="underline">jbartos13@gmail.com</address>
             </Paragraph>
           </a>
-          <a
-            href={`https://wa.me/${PHONE_NUMBER}`}
-            target={"_blank"}
-            rel="noreferrer"
-          >
-            <Paragraph className="flex items-center whitespace-nowrap mr-4 mb-2">
+          <Popup text="Copied!">
+            <Paragraph className="flex items-center whitespace-nowrap mr-4 mb-2 cursor-pointer">
               <img
                 className="mr-2"
                 height={20}
@@ -79,7 +76,7 @@ const ContactModule: React.FC<ContactModuleProps> = ({}) => {
               />
               <span className="underline">+48 696 993 916</span>
             </Paragraph>
-          </a>
+          </Popup>
         </div>
       </div>
       <div className={classNames.sections}>

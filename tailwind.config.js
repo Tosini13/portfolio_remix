@@ -40,9 +40,16 @@ module.exports = {
           '0%': { left: '0' },
           '100%': { left: '-100%' },
         },
+        'show&hide': {
+          '0%': { opacity: '0', scaleY: '0' },
+          '50%': { opacity: '1', scaleY: '1' },
+          '100%': { opacity: '0', scaleY: '0' },
+
+        },
       },
       animation: {
         'banner-scroll': 'scroll 15s linear infinite',
+        'popup': 'show&hide 2s ease',
       },
     },
   },
