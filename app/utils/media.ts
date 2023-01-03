@@ -19,4 +19,4 @@ export const MEDIA_LINKS = [
   ];
 
   export const EMAIL_ADDRESS = 'jbartos13@gmail.com';
-  export const PHONE_NUMBER = '48696993916';
+  export const PHONE_NUMBER = '+48696993916';
