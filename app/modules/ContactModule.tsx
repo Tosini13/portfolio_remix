@@ -1,6 +1,7 @@
 import call from "../../public/img/icons/call.svg";
 import telephone from "../../public/img/icons/telephone.svg";
 import mail from "../../public/img/icons/mail.svg";
+import copy from "../../public/img/icons/copy.svg";
 import Heading from "~/components/Heading";
 import { ButtonLink } from "~/components/Button";
 import Paragraph from "~/components/Paragraph";
@@ -57,30 +58,20 @@ const ContactModule: React.FC<ContactModuleProps> = ({}) => {
         <h5 className={classNames.headings}>Email & phone number</h5>
         <div className="flex flex-wrap">
           <Paragraph
-            className="flex items-center whitespace-nowrap mr-4 mb-2"
+            className="flex items-center whitespace-nowrap mr-4 mb-2 space-x-2 cursor-pointer "
             onClick={handleCopyEmail}
           >
-            <img
-              className="mr-2"
-              height={20}
-              width={20}
-              src={mail}
-              alt="e-mail icon"
-            />
+            <img height={20} width={20} src={mail} alt="e-mail icon" />
             <address className="underline">{EMAIL_ADDRESS}</address>
+            <img height={15} width={15} src={copy} alt="copy icon" />
           </Paragraph>
           <Paragraph
-            className="flex items-center whitespace-nowrap mr-4 mb-2 cursor-pointer"
+            className="flex items-center whitespace-nowrap mr-4 mb-2 space-x-2 cursor-pointer"
             onClick={handleCopyPhone}
           >
-            <img
-              className="mr-2"
-              height={20}
-              width={20}
-              src={telephone}
-              alt="e-mail icon"
-            />
+            <img height={20} width={20} src={telephone} alt="e-mail icon" />
             <span className="underline">{PHONE_NUMBER}</span>
+            <img height={15} width={15} src={copy} alt="copy icon" />
           </Paragraph>
         </div>
       </div>
