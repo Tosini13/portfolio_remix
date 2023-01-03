@@ -10,7 +10,7 @@ const Popup: React.FC<PopupPropsType> = ({ children, text, ...props }) => {
       <>
         {children}
         <div
-          className="opacity-0 animate group-hover:animate-popup absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-full"
+          className="hidden group-hover:block absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-full"
           style={{
             animationFillMode: "forwards",
           }}
