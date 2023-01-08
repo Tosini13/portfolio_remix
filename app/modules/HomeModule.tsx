@@ -1,6 +1,6 @@
 import { ButtonLink, ButtonIconLink } from "~/components/Button";
 import wave from "../../public/img/icons/wave.svg";
-import profilePhoto from "../../public/img/photos/jb.photo.png";
+import profilePhoto from "../../public/img/photos/jb_tag.photo.png";
 import logo from "../../public/img/logos/logo.svg";
 import zutLogo from "../../public/img/logos/zut.logo.png";
 import paCollegeLogo from "../../public/img/logos/paCollege.logo.png";
@@ -115,26 +115,12 @@ const HomeModule: React.FC<HomeModuleProps> = () => {
           </div>
         </div>
         <div className="relative pr-8 h-fit order-1 md:order-3">
-          <img
-            className="absolute opacity-30 -pr-8"
-            width={"100%"}
-            src={logo}
-            alt="logo"
-          />
-          <img
-            className="grayscale"
-            width={"100%"}
-            src={profilePhoto}
-            alt="profile photo"
-          />
-          <div className="absolute top-1 left-0 w-full h-full shadow-[inset_0px_0px_50px_25px_white,inset_0px_-80px_100px_31px_white,inset_0px_-80px_150px_100px_rgb(255_255_255_/_40%)]" />
+          <img width={"100%"} src={profilePhoto} alt="profile photo" />
         </div>
       </div>
       <Slider items={logos} />
     </Section>
   );
 };
-
-// inset 0px 0px 50px 25px white, inset 0px -80px 100px 31px white, inset 0px -80px 150px 100px rgb(255 255 255 / 40%)
 
 export default HomeModule;
