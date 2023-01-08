@@ -14,8 +14,12 @@ module.exports = {
     extend: {
       screens: {
         'semi-md': '900px',
+        'large': '1024px',
         'hover-hover': { 'raw': '(hover: hover)' },
         'hover-none': { 'raw': '(hover: none)' },
+      },
+      maxWidth: {
+        'theme': '1200px'
       },
       margins: {
         'desktop': '84px',

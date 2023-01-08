@@ -21,7 +21,7 @@ const FooterModule: React.FC<FooterModuleProps> = () => {
           src={LOGO_ICON}
           alt="logo background"
         />
-        <div className="relative max-w-[1024px] mx-auto flex flex-wrap justify-between items-center">
+        <div className="relative max-w-theme mx-auto flex flex-wrap justify-between items-center">
           <div className="md:mb-2 mx-auto sm:mx-0">
             <Logo secondary />
           </div>

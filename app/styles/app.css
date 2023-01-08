@@ -513,6 +513,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -712,6 +716,10 @@ video {
   max-height: 5rem;
 }
 
+.max-h-\[84px\] {
+  max-height: 84px;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -751,6 +759,10 @@ video {
 
 .max-w-0 {
   max-width: 0rem;
+}
+
+.max-w-theme {
+  max-width: 1200px;
 }
 
 .max-w-\[1024px\] {
@@ -1700,10 +1712,10 @@ video {
     margin-top: 5rem;
   }
 
-  .lg\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
+  .lg\:space-x-20 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
-    margin-right: calc(2rem * var(--tw-space-x-reverse));
-    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+    margin-right: calc(5rem * var(--tw-space-x-reverse));
+    margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 }
 
@@ -1719,10 +1731,46 @@ video {
 }
 
 @media (min-width: 900px) {
-  .semi-md\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  .semi-md\:ml-10 {
+    margin-left: 2.5rem;
+  }
+
+  .semi-md\:ml-20 {
+    margin-left: 5rem;
+  }
+
+  .semi-md\:ml-28 {
+    margin-left: 7rem;
+  }
+
+  .semi-md\:ml-14 {
+    margin-left: 3.5rem;
+  }
+
+  .semi-md\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
-    margin-right: calc(1rem * var(--tw-space-x-reverse));
-    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+    margin-right: calc(2rem * var(--tw-space-x-reverse));
+    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+}
+
+@media (min-width: 1024px) {
+  .large\:space-x-20 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(5rem * var(--tw-space-x-reverse));
+    margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .large\:space-x-24 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(6rem * var(--tw-space-x-reverse));
+    margin-left: calc(6rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .large\:space-x-14 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(3.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(3.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 }
 
