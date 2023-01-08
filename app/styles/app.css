@@ -817,7 +817,7 @@ video {
 }
 
 .animate-banner-scroll {
-  animation: scroll 15s linear infinite;
+  animation: scroll 50s linear infinite;
 }
 
 .cursor-pointer {

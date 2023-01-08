@@ -42,7 +42,7 @@ module.exports = {
         },
       },
       animation: {
-        'banner-scroll': 'scroll 15s linear infinite',
+        'banner-scroll': 'scroll 50s linear infinite',
       },
     },
   },
