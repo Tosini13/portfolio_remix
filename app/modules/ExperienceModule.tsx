@@ -42,11 +42,11 @@ const experience: Array<ExperienceType> = [
       },
       {
         id: "2",
-        name: "HTML",
+        name: "HTML5",
       },
       {
         id: "3",
-        name: "CSS",
+        name: "CSS3",
       },
       {
         id: "4",
@@ -66,15 +66,15 @@ const experience: Array<ExperienceType> = [
     technologies: [
       {
         id: "1",
-        name: "Wordpress",
+        name: "WordPress",
       },
       {
         id: "2",
-        name: "HTML",
+        name: "HTML5",
       },
       {
         id: "3",
-        name: "CSS",
+        name: "CSS3",
       },
       {
         id: "4",
@@ -98,15 +98,11 @@ const experience: Array<ExperienceType> = [
     technologies: [
       {
         id: "1",
-        name: "HTML 5",
+        name: "HTML5",
       },
       {
         id: "2",
-        name: "CSS 3",
-      },
-      {
-        id: "3.1",
-        name: "TypeScript",
+        name: "CSS3",
       },
       {
         id: "3.2",
@@ -150,11 +146,11 @@ const experience: Array<ExperienceType> = [
     technologies: [
       {
         id: "1",
-        name: "HTML 5",
+        name: "HTML5",
       },
       {
         id: "2",
-        name: "CSS 3",
+        name: "CSS3",
       },
       {
         id: "3.1",

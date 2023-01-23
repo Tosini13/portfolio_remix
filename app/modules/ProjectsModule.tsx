@@ -15,7 +15,7 @@ const projects: Array<ProjectType> = [
     technologies: [
       {
         id: "1",
-        name: "HTML 5",
+        name: "HTML5",
       },
       {
         id: "2",
@@ -54,7 +54,7 @@ const projects: Array<ProjectType> = [
     technologies: [
       {
         id: "1",
-        name: "HTML 5",
+        name: "HTML5",
       },
       {
         id: "2",
