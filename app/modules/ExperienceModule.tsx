@@ -90,7 +90,7 @@ const experience: Array<ExperienceType> = [
     id: "5",
     title: "Apptimia",
     description:
-      "I worked with 8-person team, where most members of the team where based in California, to create website for resources' management. Added new features to complex UI with React components, wrote E2E and unit tests, helped on back end with creating GraphQl queries.",
+      "I worked with 8-person team, where most members of the team where based in California, to create website for resources' management. Added new features to complex UI with React components, wrote E2E and unit tests, helped on back end with creating GraphQL queries.",
     location: "Szczecin, Poland",
     startDate: new Date("07-01-2020"),
     endDate: new Date("09-30-2021"),
@@ -182,7 +182,7 @@ const experience: Array<ExperienceType> = [
       },
       {
         id: "4.2",
-        name: "GraphQl",
+        name: "GraphQL",
       },
       {
         id: "4.3",
