@@ -38,27 +38,30 @@ const Experience: React.FC<ExperienceProps> = ({
       />
       <div className="space-y-2">
         <h3 className="text-xl font-medium">{title}</h3>
-        <Paragraph className="flex items-center font-normal text-tertiary">
-          {`${startDate.toLocaleString("default", {
-            month: "long",
-            year: "numeric",
-          })} - ${
-            endDate === "present"
-              ? endDate
-              : endDate.toLocaleString("default", {
-                  month: "long",
-                  year: "numeric",
-                })
-          }`}{" "}
-          <img
-            className="ml-2"
-            width={20}
-            height={20}
-            src={LOCATION_ICON}
-            alt="location icon"
-          />{" "}
-          <span className="font-light">{location}</span>
-        </Paragraph>
+        <div className="flex items-center font-normal text-tertiary flex-wrap">
+          <Paragraph className="mr-2">
+            {`${startDate.toLocaleString("default", {
+              month: "long",
+              year: "numeric",
+            })} - ${
+              endDate === "present"
+                ? endDate
+                : endDate.toLocaleString("default", {
+                    month: "long",
+                    year: "numeric",
+                  })
+            }`}
+          </Paragraph>
+          <Paragraph className="flex items-center font-normal text-tertiary">
+            <img
+              width={20}
+              height={20}
+              src={LOCATION_ICON}
+              alt="location icon"
+            />{" "}
+            <span className="font-light">{location}</span>
+          </Paragraph>
+        </div>
         <Paragraph>{description}</Paragraph>
         <div className="flex flex-wrap items-center">
           {technologies.map((technology) => (
