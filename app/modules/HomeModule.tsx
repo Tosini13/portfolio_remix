@@ -64,7 +64,7 @@ const HomeModule: React.FC<HomeModuleProps> = () => {
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="space-y-6 lg:mt-20 order-2 mx-6 lg:mx-0">
           <h1 className="text-home-heading font-medium leading-[3rem]">
-            Hi.{" "}
+            Hi!{" "}
             <img
               className="inline"
               width={40}
@@ -79,11 +79,11 @@ const HomeModule: React.FC<HomeModuleProps> = () => {
             and I’m <span className="text-extra">software developer</span>.
           </h1>
           <Paragraph>
-            Do You need awwwwwwsome{" "}
+            Do you need awwwwwwsome{" "}
             <span className="font-semibold">website</span>
             ?
             <br />
-            Are You looking for professionalist{" "}
+            Are you looking for professionalist{" "}
             <span className="font-semibold">developer</span>
             <br />
             and hyperfriendly <span className="font-semibold">co-worker</span>?
