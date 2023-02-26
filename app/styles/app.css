@@ -679,6 +679,10 @@ p {
   margin-top: -4rem;
 }
 
+.-mt-20 {
+  margin-top: -5rem;
+}
+
 .block {
   display: block;
 }

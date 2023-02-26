@@ -7,30 +7,35 @@ export type TLinkType = {
   href: string;
 };
 
+/**
+ * @todo
+ * /posts/react/react-redux
+ */
+
 export const links: Array<TLinkType> = [
   {
     title: "home",
-    href: "#home",
+    href: "/#home",
   },
   {
     title: "My story",
-    href: "#story",
+    href: "/#story",
   },
   {
     title: "Testimonials",
-    href: "#testimonials",
+    href: "/#testimonials",
   },
   {
     title: "My projects",
-    href: "#projects",
+    href: "/#projects",
   },
   {
     title: "Experience",
-    href: "#experience",
+    href: "/#experience",
   },
   {
     title: "Contact",
-    href: "#contact",
+    href: "/#contact",
   },
 ];
 

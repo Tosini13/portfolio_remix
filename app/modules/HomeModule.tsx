@@ -59,7 +59,7 @@ const HomeModule: React.FC<HomeModuleProps> = () => {
     <Section
       data-testId="home_module"
       id="home"
-      className="max-w-[1024px] mx-auto space-y-20 -mt-16"
+      className="max-w-[1024px] mx-auto space-y-20 -mt-20"
     >
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="space-y-6 lg:mt-20 order-2 mx-6 lg:mx-0">
