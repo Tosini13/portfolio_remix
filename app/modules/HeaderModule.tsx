@@ -39,8 +39,8 @@ type HeaderModuleProps = {};
 const HeaderModule: React.FC<HeaderModuleProps> = () => {
   return (
     <header
-      data-testId="header_module"
-      className="w-full sticky top-0 left-0 z-50 max-h-[84px]"
+      data-test-id="header_module"
+      className="w-full sticky top-0 left-0 z-50 max-h-[84px] md:mb-[48px]"
     >
       <div className="hidden md:block">
         <HeaderDesktop links={links} />
