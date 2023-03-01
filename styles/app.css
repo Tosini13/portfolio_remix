@@ -3,16 +3,25 @@
 @tailwind utilities;
 
 @layer base {
-    h1 {
-        @apply text-2xl
+    .post h1 {
+        @apply text-3xl my-2.5 font-semibold
     }
-    h2 {
-        @apply text-xl
+    .post h2 {
+        @apply text-2xl my-3 font-semibold border-extra border-l-8 pl-2 
     }
-    h3 {
-        @apply text-lg
+    .post h3 {
+        @apply text-xl my-4 font-semibold
     }
-    p{
+    .post h4 {
+        @apply text-lg my-4 font-semibold
+    }
+    .post p{
         @apply leading-8 font-light
+    }
+    .post ul{
+        @apply list-disc list-inside;
+    }
+    .post a {
+        @apply text-extra;
     }
 }
