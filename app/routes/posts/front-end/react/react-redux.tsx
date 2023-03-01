@@ -1,5 +1,5 @@
 import React from "react";
-import MD_ReactRedux from "~/posts/react/react-redux.md";
+import MD_ReactRedux from "~/posts/front-end/react/react-redux.md";
 
 type ReactReduxPropsType = {};
 

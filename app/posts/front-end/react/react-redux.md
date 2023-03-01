@@ -1,7 +1,5 @@
 # React-Redux
 
-<br/>
-
 ## Redux
 
 Redux is a library to facilitate state management. It gives range of features to create, update store, add and remove entities inside. Thanks to the organized flow and tools it allows to combine it with important operations like communicating with backend and update subscribers. For React library usually react-redux library is used to increase compatibility and developer experience.

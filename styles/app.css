@@ -10,7 +10,7 @@
         @apply font-semibold;
     }
     .post h1 {
-        @apply text-3xl my-2.5 font-semibold
+        @apply text-3xl my-2.5 mb-8 font-semibold
     }
     .post h2 {
         @apply text-2xl my-3 font-semibold border-extra border-l-8 pl-2 
