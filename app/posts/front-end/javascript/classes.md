@@ -5,17 +5,18 @@
 Static data is shared between all the instances. It can be declared in static scope inside the class - it's added just after initialization or after adding it to a prototype object.
 
 ```
-class A{
+class A {
     static{
         A.prototype.alphabet = "latin";
     }
 }
 ```
 
+<br/>
+
 ```
-class A{
-
+class A {
+ /* body */
 }
-
 A.prototype.alphabet = "latin";
 ```

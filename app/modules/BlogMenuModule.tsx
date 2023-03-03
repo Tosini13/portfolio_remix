@@ -1,13 +1,30 @@
 import React from "react";
+import BlogMenu from "~/components/BlogMenu";
 import RecursiveBlogMenuLinks, {
   BlogLinkType,
 } from "~/components/RecursiveBlogMenuLinks";
 
-const blogLinks: Array<BlogLinkType> = [
+export const blogLinks: Array<BlogLinkType> = [
   {
     id: "front-end",
     name: "frontend",
     links: [
+      {
+        id: "front-end/javascript",
+        name: "JavaScript",
+        links: [
+          {
+            id: "front-end/javascript/classes",
+            name: "Classes",
+            link: "/posts/front-end/javascript/classes",
+          },
+          {
+            id: "front-end/javascript/functions",
+            name: "Functions",
+            link: "/posts/front-end/javascript/functions",
+          },
+        ],
+      },
       {
         id: "front-end/react",
         name: "React",
@@ -58,7 +75,7 @@ const BlogMenuModule: React.FC<BlogMenuModulePropsType> = ({ pathname }) => {
 
   return (
     <div data-test-id="blog_menu_module">
-      <RecursiveBlogMenuLinks
+      <BlogMenu
         links={blogLinks}
         open={open}
         handleSwitchOpen={handleSwitchOpen}

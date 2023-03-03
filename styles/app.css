@@ -30,4 +30,7 @@
     .post a {
         @apply text-extra;
     }
+    .post pre{
+        @apply bg-tertiary text-white p-2 rounded-lg;
+    }
 }

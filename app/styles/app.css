@@ -479,6 +479,15 @@ video {
   color: rgb(45 149 245 / var(--tw-text-opacity));
 }
 
+.post pre {
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(155 157 177 / var(--tw-bg-opacity));
+  padding: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -631,18 +640,6 @@ video {
 
 .top-1\/2 {
   top: 50%;
-}
-
-.top-20 {
-  top: 5rem;
-}
-
-.top-\[200px\] {
-  top: 200px;
-}
-
-.top-\[84px\] {
-  top: 84px;
 }
 
 .top-\[132px\] {
@@ -996,11 +993,6 @@ video {
   row-gap: 3.5rem;
 }
 
-.gap-x-2 {
-  -moz-column-gap: 0.5rem;
-       column-gap: 0.5rem;
-}
-
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1291,6 +1283,11 @@ video {
   font-size: 2.7rem;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -1353,6 +1350,11 @@ video {
 .text-extra {
   --tw-text-opacity: 1;
   color: rgb(45 149 245 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1536,6 +1538,12 @@ video {
   background-color: rgb(36 36 46 / var(--tw-bg-opacity));
 }
 
+.before\:bg-white::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .before\:text-9xl::before {
   content: var(--tw-content);
   font-size: 8rem;
@@ -1685,6 +1693,12 @@ video {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(45 149 245 / var(--tw-bg-opacity));
+}
+
+.after\:bg-white::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .after\:transition-all::after {
@@ -1902,8 +1916,25 @@ video {
     color: rgb(45 149 245 / var(--tw-text-opacity));
   }
 
+  .md\:text-primary {
+    --tw-text-opacity: 1;
+    color: rgb(36 36 46 / var(--tw-text-opacity));
+  }
+
   .md\:pt-section-desktop {
     padding-top: 89px;
+  }
+
+  .md\:before\:bg-primary::before {
+    content: var(--tw-content);
+    --tw-bg-opacity: 1;
+    background-color: rgb(36 36 46 / var(--tw-bg-opacity));
+  }
+
+  .md\:after\:bg-primary::after {
+    content: var(--tw-content);
+    --tw-bg-opacity: 1;
+    background-color: rgb(36 36 46 / var(--tw-bg-opacity));
   }
 }
 

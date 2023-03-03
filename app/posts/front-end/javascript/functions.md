@@ -2,7 +2,8 @@
 
 ## Keywords
 
-**first-class object** - can be passed to function, returned from function and assigned to a variable or prop of a object.
+- **first-class object** - object that can be passed to function, returned from function and assigned to a variable or prop of a object.
+- **IIFE** - Immediately Invoked Function Expression
 
 ## Definition
 
@@ -18,7 +19,7 @@ function name(){
 
 ### function expression
 
-It is anonymous function and can be used as IIFE (Immediately Invoked Function Expression) - runs as soon as is declared
+It is anonymous function and can be used as IIFE - runs as soon as is declared
 
 ```
 const name = function(){
@@ -26,7 +27,7 @@ const name = function(){
 }
 ```
 
-**IIFE**
+**IIFE:**
 
 ```
 (function(){
@@ -42,7 +43,7 @@ const name = () => {
 }
 ```
 
-**IIFE**
+**IIFE:**
 
 ```
 (() => {
