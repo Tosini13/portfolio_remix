@@ -633,6 +633,22 @@ video {
   top: 50%;
 }
 
+.top-20 {
+  top: 5rem;
+}
+
+.top-\[200px\] {
+  top: 200px;
+}
+
+.top-\[84px\] {
+  top: 84px;
+}
+
+.top-\[132px\] {
+  top: 132px;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -665,6 +681,11 @@ video {
 .mx-6 {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .mr-2 {
@@ -747,6 +768,10 @@ video {
   height: 100%;
 }
 
+.h-\[2px\] {
+  height: 2px;
+}
+
 .h-20 {
   height: 5rem;
 }
@@ -780,6 +805,10 @@ video {
   min-height: 0px;
 }
 
+.min-h-\[2px\] {
+  min-height: 2px;
+}
+
 .min-h-main {
   min-height: calc( 100vh - 322px );
 }
@@ -801,12 +830,28 @@ video {
   width: fit-content;
 }
 
+.w-\[10px\] {
+  width: 10px;
+}
+
+.min-w-\[150px\] {
+  min-width: 150px;
+}
+
+.min-w-\[10px\] {
+  min-width: 10px;
+}
+
 .min-w-\[200\%\] {
   min-width: 200%;
 }
 
 .min-w-\[250px\] {
   min-width: 250px;
+}
+
+.min-w-\[200px\] {
+  min-width: 200px;
 }
 
 .max-w-full {
@@ -951,6 +996,11 @@ video {
   row-gap: 3.5rem;
 }
 
+.gap-x-2 {
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1088,6 +1138,10 @@ video {
   border-bottom-width: 2px;
 }
 
+.border-b {
+  border-bottom-width: 1px;
+}
+
 .border-secondary {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -1096,6 +1150,11 @@ video {
 .border-\[\#E8E8E8\] {
   --tw-border-opacity: 1;
   border-color: rgb(232 232 232 / var(--tw-border-opacity));
+}
+
+.border-tertiary {
+  --tw-border-opacity: 1;
+  border-color: rgb(155 157 177 / var(--tw-border-opacity));
 }
 
 .bg-primary {
@@ -1422,6 +1481,11 @@ video {
   right: -2.5rem;
 }
 
+.before\:left-0::before {
+  content: var(--tw-content);
+  left: 0px;
+}
+
 .before\:top-20::before {
   content: var(--tw-content);
   top: 5rem;
@@ -1430,6 +1494,46 @@ video {
 .before\:-left-5::before {
   content: var(--tw-content);
   left: -1.25rem;
+}
+
+.before\:h-full::before {
+  content: var(--tw-content);
+  height: 100%;
+}
+
+.before\:w-full::before {
+  content: var(--tw-content);
+  width: 100%;
+}
+
+.before\:translate-x-\[35\%\]::before {
+  content: var(--tw-content);
+  --tw-translate-x: 35%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.before\:-rotate-\[40deg\]::before {
+  content: var(--tw-content);
+  --tw-rotate: -40deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.before\:rotate-\[0deg\]::before {
+  content: var(--tw-content);
+  --tw-rotate: 0deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.before\:bg-extra::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(45 149 245 / var(--tw-bg-opacity));
+}
+
+.before\:bg-primary::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(36 36 46 / var(--tw-bg-opacity));
 }
 
 .before\:text-9xl::before {
@@ -1464,6 +1568,18 @@ video {
   opacity: 0.1;
 }
 
+.before\:transition-all::before {
+  content: var(--tw-content);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.before\:duration-500::before {
+  content: var(--tw-content);
+  transition-duration: 500ms;
+}
+
 .before\:content-\[\'\<\/\>\'\]::before {
   --tw-content: '</>';
   content: var(--tw-content);
@@ -1489,6 +1605,11 @@ video {
   left: 0px;
 }
 
+.after\:right-0::after {
+  content: var(--tw-content);
+  right: 0px;
+}
+
 .after\:block::after {
   content: var(--tw-content);
   display: block;
@@ -1497,6 +1618,11 @@ video {
 .after\:h-px::after {
   content: var(--tw-content);
   height: 1px;
+}
+
+.after\:h-full::after {
+  content: var(--tw-content);
+  height: 100%;
 }
 
 .after\:w-2\/3::after {
@@ -1512,6 +1638,24 @@ video {
 .after\:w-full::after {
   content: var(--tw-content);
   width: 100%;
+}
+
+.after\:-translate-x-\[35\%\]::after {
+  content: var(--tw-content);
+  --tw-translate-x: -35%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.after\:rotate-\[40deg\]::after {
+  content: var(--tw-content);
+  --tw-rotate: 40deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.after\:rotate-\[0deg\]::after {
+  content: var(--tw-content);
+  --tw-rotate: 0deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .after\:border-b-4::after {
@@ -1537,6 +1681,12 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.after\:bg-extra::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(45 149 245 / var(--tw-bg-opacity));
+}
+
 .after\:transition-all::after {
   content: var(--tw-content);
   transition-property: all;
@@ -1547,6 +1697,11 @@ video {
 .after\:duration-300::after {
   content: var(--tw-content);
   transition-duration: 300ms;
+}
+
+.after\:duration-500::after {
+  content: var(--tw-content);
+  transition-duration: 500ms;
 }
 
 .after\:ease-in-out::after {
@@ -1702,6 +1857,11 @@ video {
   .md\:gap-x-1 {
     -moz-column-gap: 0.25rem;
          column-gap: 0.25rem;
+  }
+
+  .md\:gap-x-10 {
+    -moz-column-gap: 2.5rem;
+         column-gap: 2.5rem;
   }
 
   .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
