@@ -32,14 +32,13 @@ const StoryModule: React.FC<StoryModuleProps> = ({}) => {
       <div className="space-y-6 max-w-[600px] order-3">
         <div className="hidden md:block">{heading}</div>
         <Paragraph>
-          I am Software Developer, focused on frontend as well as constantly
-          improving backend skills. I have experience working with scrum teams,
+          I am a Software Developer, with skills focused on frontend as well as
+          backend side. I have experience working with scrum teams and
           developing React web application with different technologies applied
-          to projects. My soft skills like work time organization optimisation,
-          well communication skills enhance problem solving and development
-          velocity. In free time I test new technologies, along with my brother
-          who is UX/UI designer, we develop our ideas to simplify day-to-day
-          problems.
+          to projects. I am highly efficient with strong communication skills
+          which enhances problem solving and development velocity. Along with my
+          brother, who is a UX/UI designer, we develop and actualize our ideas
+          to simplify day-to-day problems.
         </Paragraph>
         <div className="text-center md:text-left">
           <ButtonLink

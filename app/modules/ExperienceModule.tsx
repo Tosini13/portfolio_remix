@@ -202,6 +202,58 @@ const experience: Array<ExperienceType> = [
       },
     ],
   },
+  {
+    id: "7",
+    title: "SkyGate",
+    description:
+      "I worked on highly dynamic web application using mainly React.js, Typescript. I created new essential features based on animations (Framer Motion) and real-time data processing and rendering (REST API, WebSocket) with complex local state management (XState) I solved new and old arisen bugs including design, updates of data structures (PHP).",
+    location: "Remote, Europe",
+    startDate: new Date("03-01-2023"),
+    endDate: "present",
+    iconSrc: `${LOGOS_IMG_PATH}/skygate.logo.png`,
+    technologies: [
+      {
+        id: "1",
+        name: "HTML5",
+      },
+      {
+        id: "2",
+        name: "CSS3",
+      },
+      {
+        id: "3.1",
+        name: "JavaScript",
+      },
+      {
+        id: "3",
+        name: "TypeScript",
+      },
+      {
+        id: "4",
+        name: "React.js",
+      },
+      {
+        id: "4.11",
+        name: "Framer Motion",
+      },
+      {
+        id: "4.12",
+        name: "XState",
+      },
+      {
+        id: "4.2",
+        name: "WebSocket",
+      },
+      {
+        id: "4.3",
+        name: "Rest API",
+      },
+      {
+        id: "6",
+        name: "React Query",
+      },
+    ],
+  },
 ];
 
 type ExperienceModuleProps = {};
