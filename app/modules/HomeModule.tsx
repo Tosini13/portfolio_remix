@@ -8,6 +8,7 @@ import doreaLogo from "../../public/img/logos/dorea.logo.png";
 import mayerynLogo from "../../public/img/logos/mayeryn.logo.png";
 import apptimiaLogo from "../../public/img/logos/apptimia.logo.png";
 import brainlyLogo from "../../public/img/logos/brainly.logo.png";
+import skygateLogo from "../../public/img/logos/skygate.logo.png";
 import Paragraph from "~/components/Paragraph";
 import { MEDIA_LINKS } from "~/utils/media";
 import Slider from "~/components/Slider";
@@ -49,6 +50,11 @@ const logos: Array<LogoType> = [
     id: "brainly",
     src: brainlyLogo,
     alt: "brainly logo",
+  },
+  {
+    id: "skyGate",
+    src: skygateLogo,
+    alt: "sky gate logo",
   },
 ];
 
