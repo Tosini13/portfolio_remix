@@ -256,6 +256,9 @@ const experience: Array<ExperienceType> = [
   },
 ];
 
+const sortByIdDesc = (a: ExperienceType, b: ExperienceType) =>
+  Number(a.id) < Number(b.id) ? 1 : -1;
+
 type ExperienceModuleProps = {};
 
 const ExperienceModule: React.FC<ExperienceModuleProps> = () => {
@@ -270,7 +273,7 @@ const ExperienceModule: React.FC<ExperienceModuleProps> = () => {
           Experience <img width={40} height={40} src={ok} alt="ok hand" />{" "}
         </Heading>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-8 max-w-[1024px] mx-auto">
-          {experience.reverse().map((exp) => (
+          {experience.sort(sortByIdDesc).map((exp) => (
             <div
               key={exp.id}
               className="bg-secondary shadow-[0px_0px_30px_0px_white]"
