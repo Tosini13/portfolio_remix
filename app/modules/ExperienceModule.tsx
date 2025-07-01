@@ -138,7 +138,7 @@ const experience: Array<ExperienceType> = [
     id: "6",
     title: "Brainly",
     description:
-      "I worked with 7-person team to migrate brainly website for a few markets. Brainly has its own website for students, to give accessibility to improve knowledge or help with understanding subjects at school. Migrated and created React components, wrote e2e and unit tests, improved CI/CD (GitHub actions). I also took part in React Miami conference in April 2022, where I could get to know newest technologies.",
+      "Built highly efficient React components and enhanced the CI/CD pipeline to support smooth bi-weekly production deployments, delivering reliable updates to over 500,000 daily active users.",
     location: "Barcelona, Spain",
     startDate: new Date("01-01-2022"),
     endDate: new Date("12-30-2022"),
@@ -204,13 +204,13 @@ const experience: Array<ExperienceType> = [
   },
   {
     id: "7",
-    title: "SkyGate",
+    title: "UN7",
     description:
-      "I worked on highly dynamic web application using mainly React.js, Typescript. I created new essential features based on animations (Framer Motion) and real-time data processing and rendering (REST API, WebSocket) with complex local state management (XState) I solved new and old arisen bugs including design, updates of data structures (PHP).",
+      "Played a key role in the growth of Key-drop.com, a leading case-opening platform for Counter-Strike players, contributing to record-breaking user engagement with over 90,000 daily active users. Designed and implemented scalable solutions to enhance the user experience (UX) in real-time, data-intensive environments.",
     location: "Remote, Europe",
-    startDate: new Date("03-01-2023"),
-    endDate: "present",
-    iconSrc: `${LOGOS_IMG_PATH}/skygate.logo.png`,
+    startDate: new Date("01-01-2023"),
+    endDate: new Date("01-11-2023"),
+    iconSrc: `${LOGOS_IMG_PATH}/keydrop.logo.svg`,
     technologies: [
       {
         id: "1",
@@ -252,6 +252,150 @@ const experience: Array<ExperienceType> = [
         id: "6",
         name: "React Query",
       },
+    ],
+  },
+  {
+    id: "8",
+    title: "DevTech",
+    description:
+      "Led the development and supervised the frontend for an AI-driven process management system. Leveraged modern technologies, including GitHub Copilot to expedite development, improve code efficiency, productivity and CodeRabbit for AI-driven review processes. Developed and maintained a comprehensive suite of unit tests, enhancing code reliability and maintainability.",
+    location: "Remote, Europe",
+    startDate: new Date("01-11-2023"),
+    endDate: new Date("01-04-2024"),
+    iconSrc: `${LOGOS_IMG_PATH}/devtech.logo.webp`,
+    technologies: [
+      {
+        id: "1",
+        name: "HTML5",
+      },
+      {
+        id: "2",
+        name: "CSS3",
+      },
+      {
+        id: "3.1",
+        name: "JavaScript",
+      },
+      {
+        id: "3",
+        name: "TypeScript",
+      },
+      {
+        id: "4",
+        name: "React.js",
+      },
+      {
+        id: "4.11",
+        name: "Vite",
+      },
+      {
+        id: "4.12",
+        name: "Vitest",
+      },
+      {
+        id: "4.13",
+        name: "gRPC",
+      },
+      {
+        id: "4.2",
+        name: "Tailwind CSS",
+      },
+      {
+        id: "4.3",
+        name: "React Query",
+      },
+      {
+        id: "6",
+        name: "Mocha & Chai",
+      },
+      {
+        id: "7",
+        name: "React Testing Library",
+      },
+    ],
+  },
+  {
+    id: "9",
+    title: "Food and Agriculture Organization of the UN",
+    description:
+      "Leading the development of a high-performance geographical data visualization platform for a large-scale global organization, collaborating closely with cross-functional teams including back-end developers, UI/UX designers, machine learning engineers, researchers, product managers, and clients.",
+    location: "Remote, Europe",
+    startDate: new Date("01-02-2024"),
+    endDate: "present",
+    iconSrc: `${LOGOS_IMG_PATH}/fao.logo.png`,
+    technologies: [
+      {
+        id: "1",
+        name: "HTML5",
+      },
+      {
+        id: "2",
+        name: "CSS3",
+      },
+      {
+        id: "2.1",
+        name: "Sass",
+      },
+      {
+        id: "3.1",
+        name: "JavaScript",
+      },
+      {
+        id: "3",
+        name: "TypeScript",
+      },
+      {
+        id: "4",
+        name: "React.js",
+      },
+      {
+        id: "4.1",
+        name: "Next.js",
+      },
+      {
+        id: "4.12",
+        name: "Styled Components",
+      },
+      {
+        id: "4.12",
+        name: "Tailwind CSS",
+      },
+      {
+        id: "4.13",
+        name: "React Query",
+      },
+      {
+        id: "4.11",
+        name: "TerriaJS",
+      },
+      {
+        id: "4.13",
+        name: "Firebase",
+      },
+      {
+        id: "5.1",
+        name: "Google Cloud Platform",
+      },
+      {
+          id: "5.13",
+          name: "Docker",
+        },
+        {
+          id: "5.14",
+          name: "Kubernetes",
+        },
+        {
+          id: "5.16",
+          name: "Bitbucket Pipelines",
+        },
+        {
+          id: "5.17",
+          name: "GitHub Actions",
+        },
+        {
+          id: "5.18",
+          name: "Jasmine",
+        },
     ],
   },
 ];

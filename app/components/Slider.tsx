@@ -1,7 +1,6 @@
 import React from "react";
 import type { LogoType } from "~/modules/HomeModule";
 
-let count = 1;
 
 type SliderProps = {
   items: Array<LogoType>;
@@ -37,9 +36,10 @@ const SliderItems: React.FC<SliderItemsProps> = ({ items }) => {
         return (
           <div key={item.id} className="flex justify-center items-start">
             <img
-              className="grayscale h-fit hover:grayscale-0 transition-all duration-300 max-h-20"
+              className="grayscale h-fit hover:grayscale-0 transition-all duration-300 max-h-16"
               src={item.src}
               alt={item.alt}
+              height={50}
             />
           </div>
         );

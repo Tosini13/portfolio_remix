@@ -1,7 +1,7 @@
-import Paragraph from "./Paragraph";
-import { TechnologyType } from "./Project";
-import LOCATION_ICON from "../../public/img/icons/location.svg";
 import React from "react";
+import LOCATION_ICON from "../../public/img/icons/location.svg";
+import Paragraph from "./Paragraph";
+import type { TechnologyType } from "./Project";
 
 export type ExperienceType = {
   id: string;
@@ -31,9 +31,8 @@ const Experience: React.FC<ExperienceProps> = ({
       className="relative rounded-lg group hover:shadow-[0px_5px_30px_rgba(0,_0,_0,_0.08)] p-10 pb-4 transition-all duration-300"
     >
       <img
-        className="absolute top-2 left-2 opacity-10 grayscale group-hover:grayscale-0 group-hover:opacity-20 transition-all duration-300 h-[80px]"
+        className="absolute top-2 left-2 opacity-10 grayscale group-hover:grayscale-0 group-hover:opacity-20 transition-all duration-300 h-[80px] max-w-[200px] object-contain"
         src={iconSrc}
-        height={200}
         alt={`${title} logo`}
       />
       <div className="space-y-2">

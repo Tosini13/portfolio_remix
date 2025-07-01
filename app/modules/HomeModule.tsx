@@ -1,18 +1,19 @@
-import { ButtonLink, ButtonIconLink } from "~/components/Button";
+import { ButtonIconLink, ButtonLink } from "~/components/Button";
+import Paragraph from "~/components/Paragraph";
+import Section from "~/components/Section";
+import Slider from "~/components/Slider";
+import { MEDIA_LINKS } from "~/utils/media";
 import wave from "../../public/img/icons/wave.svg";
-import profilePhoto from "../../public/img/photos/jb_tag.photo.png";
-import logo from "../../public/img/logos/logo.svg";
-import zutLogo from "../../public/img/logos/zut.logo.png";
-import paCollegeLogo from "../../public/img/logos/paCollege.logo.png";
-import doreaLogo from "../../public/img/logos/dorea.logo.png";
-import mayerynLogo from "../../public/img/logos/mayeryn.logo.png";
 import apptimiaLogo from "../../public/img/logos/apptimia.logo.png";
 import brainlyLogo from "../../public/img/logos/brainly.logo.png";
-import skygateLogo from "../../public/img/logos/skygate.logo.png";
-import Paragraph from "~/components/Paragraph";
-import { MEDIA_LINKS } from "~/utils/media";
-import Slider from "~/components/Slider";
-import Section from "~/components/Section";
+import devtechLogo from "../../public/img/logos/devtech.logo.webp";
+import doreaLogo from "../../public/img/logos/dorea.logo.png";
+import faoLogo from "../../public/img/logos/fao.logo.png";
+import un7Logo from "../../public/img/logos/keydrop.logo.svg";
+import mayerynLogo from "../../public/img/logos/mayeryn.logo.png";
+import paCollegeLogo from "../../public/img/logos/paCollege.logo.png";
+import zutLogo from "../../public/img/logos/zut.logo.png";
+import profilePhoto from "../../public/img/photos/jb_tag.photo.png";
 
 export type LogoType = {
   id: string;
@@ -52,9 +53,20 @@ const logos: Array<LogoType> = [
     alt: "brainly logo",
   },
   {
-    id: "skyGate",
-    src: skygateLogo,
-    alt: "sky gate logo",
+    id: "un7",
+    src: un7Logo,
+    alt: "un7 logo",
+  },
+  {
+    id: "devtech",
+    src: devtechLogo,
+    alt: "devtech logo",
+  },
+  
+  {
+    id: "fao",
+    src: faoLogo,
+    alt: "fao logo",
   },
 ];
 
