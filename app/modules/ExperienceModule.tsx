@@ -11,8 +11,8 @@ const experience: Array<ExperienceType> = [
     title: "West-pomeranian Technology Univeristy",
     description: "",
     location: "Szczecin, Poland",
-    startDate: new Date("10-01-2016"),
-    endDate: new Date("09-30-2019"),
+    startDate: new Date("10/01/2016"),
+    endDate: new Date("09/30/2019"),
     technologies: [],
     iconSrc: `${LOGOS_IMG_PATH}/zut.logo.png`,
   },
@@ -21,8 +21,8 @@ const experience: Array<ExperienceType> = [
     title: "P.A. College",
     description: "",
     location: "Larnaca, Cyprus",
-    startDate: new Date("10-01-2018"),
-    endDate: new Date("05-20-2019"),
+    startDate: new Date("10/01/2018"),
+    endDate: new Date("05/20/2019"),
     technologies: [],
     iconSrc: `${LOGOS_IMG_PATH}/paCollege.logo.png`,
   },
@@ -32,8 +32,8 @@ const experience: Array<ExperienceType> = [
     description:
       "2 months Internship. I was Developing and taking care of website with WordPress. Improving skills in PHP (Ajax, Bootstrap). Improving knowledge about SEO.",
     location: "Larnaca, Cyprus",
-    startDate: new Date("06-01-2019"),
-    endDate: new Date("07-30-2019"),
+    startDate: new Date("06/01/2019"),
+    endDate: new Date("07/30/2019"),
     iconSrc: `${LOGOS_IMG_PATH}/dorea.logo.png`,
     technologies: [
       {
@@ -60,8 +60,8 @@ const experience: Array<ExperienceType> = [
     description:
       "I worked with 4-person team to build Mayeryn website. I improved WordPress and PHP skills.",
     location: "Warsaw, Poland (Remotely)",
-    startDate: new Date("06-01-2020"),
-    endDate: new Date("07-30-2020"),
+    startDate: new Date("05/01/2020"),
+    endDate: new Date("06/30/2020"),
     iconSrc: `${LOGOS_IMG_PATH}/mayeryn.logo.png`,
     technologies: [
       {
@@ -92,8 +92,8 @@ const experience: Array<ExperienceType> = [
     description:
       "I worked with 8-person team, where most members of the team where based in California, to create website for resources' management. Added new features to complex UI with React components, wrote E2E and unit tests, helped on back end with creating GraphQL queries.",
     location: "Szczecin, Poland",
-    startDate: new Date("07-01-2020"),
-    endDate: new Date("09-30-2021"),
+    startDate: new Date("07/01/2020"),
+    endDate: new Date("12/30/2021"),
     iconSrc: `${LOGOS_IMG_PATH}/apptimia.logo.png`,
     technologies: [
       {
@@ -140,8 +140,8 @@ const experience: Array<ExperienceType> = [
     description:
       "Built highly efficient React components and enhanced the CI/CD pipeline to support smooth bi-weekly production deployments, delivering reliable updates to over 500,000 daily active users.",
     location: "Barcelona, Spain",
-    startDate: new Date("01-01-2022"),
-    endDate: new Date("12-30-2022"),
+    startDate: new Date("01/01/2022"),
+    endDate: new Date("12/30/2022"),
     iconSrc: `${LOGOS_IMG_PATH}/brainly.logo.png`,
     technologies: [
       {
@@ -208,8 +208,8 @@ const experience: Array<ExperienceType> = [
     description:
       "Played a key role in the growth of Key-drop.com, a leading case-opening platform for Counter-Strike players, contributing to record-breaking user engagement with over 90,000 daily active users. Designed and implemented scalable solutions to enhance the user experience (UX) in real-time, data-intensive environments.",
     location: "Remote, Europe",
-    startDate: new Date("01-01-2023"),
-    endDate: new Date("01-11-2023"),
+    startDate: new Date("01/01/2023"),
+    endDate: new Date("11/01/2023"),
     iconSrc: `${LOGOS_IMG_PATH}/keydrop.logo.svg`,
     technologies: [
       {
@@ -260,8 +260,8 @@ const experience: Array<ExperienceType> = [
     description:
       "Led the development and supervised the frontend for an AI-driven process management system. Leveraged modern technologies, including GitHub Copilot to expedite development, improve code efficiency, productivity and CodeRabbit for AI-driven review processes. Developed and maintained a comprehensive suite of unit tests, enhancing code reliability and maintainability.",
     location: "Remote, Europe",
-    startDate: new Date("01-11-2023"),
-    endDate: new Date("01-04-2024"),
+    startDate: new Date("11/01/2023"),
+    endDate: new Date("04/01/2024"),
     iconSrc: `${LOGOS_IMG_PATH}/devtech.logo.webp`,
     technologies: [
       {
@@ -320,7 +320,7 @@ const experience: Array<ExperienceType> = [
     description:
       "Leading the development of a high-performance geographical data visualization platform for a large-scale global organization, collaborating closely with cross-functional teams including back-end developers, UI/UX designers, machine learning engineers, researchers, product managers, and clients.",
     location: "Remote, Europe",
-    startDate: new Date("01-02-2024"),
+    startDate: new Date("02/01/2024"),
     endDate: "present",
     iconSrc: `${LOGOS_IMG_PATH}/fao.logo.png`,
     technologies: [
