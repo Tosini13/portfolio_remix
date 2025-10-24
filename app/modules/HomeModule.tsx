@@ -62,7 +62,7 @@ const logos: Array<LogoType> = [
     src: devtechLogo,
     alt: "devtech logo",
   },
-  
+
   {
     id: "fao",
     src: faoLogo,
@@ -94,17 +94,17 @@ const HomeModule: React.FC<HomeModuleProps> = () => {
             <span title="Kuba is a short name of Jakub" className="text-extra">
               Kuba
             </span>{" "}
-            and I’m <span className="text-extra">software developer</span>.
+            and I’m a <span className="text-extra">software developer</span>.
           </h1>
           <Paragraph>
-            Do you need awwwwwwsome{" "}
+            Do you need an efficient and engaging{" "}
             <span className="font-semibold">website</span>
             ?
             <br />
-            Are you looking for professionalist{" "}
-            <span className="font-semibold">developer</span>
-            <br />
-            and hyperfriendly <span className="font-semibold">co-worker</span>?
+            Are you looking for an <span className="font-semibold">
+              expert
+            </span>{" "}
+            who can grow <span className="font-semibold">your business</span>?
           </Paragraph>
           <ButtonLink
             href="#experience"
